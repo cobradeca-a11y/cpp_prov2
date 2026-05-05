@@ -77,6 +77,57 @@ PUNCTUATION_TOKENS = {".", ",", ";", ":", "!", "?", "(", ")", "[", "]", "{", "}"
 CONTINUATION_TOKENS = {"-", "–", "—", "_"}
 MUSIC_SYMBOL_NOISE_TOKENS = {"។", "·", "•", "*"}
 
+# Padrões de ruído específicos de OCR em partitura impressa (audit-66)
+# Capturam fragmentos de linhas de pauta, ligaduras, arcos, dinâmicas gráficas
+_SCORE_NOISE_RE = re.compile(r'''(?x)^[|/<>=+~@#%^&*_`\[\]{}]+$''')
+# Tokens de ruído de OCR: todas maiúsculas de 1-3 letras sem vogal = fragmento de pauta
+_UPPERCASE_NOISE_RE = re.compile(r"^[B-DF-HJ-NP-TV-Z]{1,3}$")  # consoantes maiúsculas
+
+# Letras repetidas (artefato de barra de pauta ou ligadura)
+_REPEATED_CHAR_RE = re.compile(r"^(.)\1{1,}$")  # ex: SS, TT, LL, ee, OO
+
+# Token muito curto todo maiúsculo que não é acorde nem conhecido
+_CAPS_FRAGMENT_RE = re.compile(r"^[A-Z]{2,4}$")
+
+# Vogais únicas ou fragmentos sem sentido
+_SINGLE_VOWEL_RE = re.compile(r"^[aeiouAEIOUàáâãéêíóôõúüÀÁÂÃÉÊÍÓÔÕÚÜ]$")
+
+def _is_score_ocr_noise(raw: str, cleaned: str) -> bool:
+    """Retorna True se o token é ruído típico de OCR em partitura impressa.
+    
+    Preserva o OCR bruto — só bloqueia classificação como lyric/fragment.
+    Não descarta o bloco, apenas o reclassifica como music_symbol_noise.
+    """
+    if not raw:
+        return False
+
+    # Fragmentos de símbolo puro
+    if _SCORE_NOISE_RE.match(raw):
+        return True
+
+    # Caracter repetido (ex: SS, TT, ee, OO, LL) — artefato de linha de pauta
+    if _REPEATED_CHAR_RE.match(raw):
+        return True
+
+    # Consoantes maiúsculas puras sem vogal (ex: SS, TJ, CS, TT, IA → IA tem vogal, mas DLC, CCL não)
+    if _UPPERCASE_NOISE_RE.match(raw):
+        return True
+
+    # Combinação de maiúsculas 2-4 chars que não é acorde válido
+    if _CAPS_FRAGMENT_RE.match(raw) and not CHORD_RE.match(raw):
+        # Siglas de instrumento/dinâmica: maiúsculas puras sem mix de case
+        # VA, IA, AWA, SS, TJ, etc. são artefatos de estafeta de pauta
+        # Exceções: palavras curtas em maiúsculas que têm sentido (DE, EM, NA, NO, EM)
+        _COMMON_PT_CAPS = {"DE", "EM", "NA", "NO", "AS", "OS", "DO", "DA", "OU", "SE"}
+        if raw not in _COMMON_PT_CAPS:
+            return True
+
+    # Vogal ou consoante única
+    if len(cleaned) == 1 and not CHORD_RE.match(raw):
+        return True
+
+    return False
+
 
 def build_initial_fusion(protocol: dict[str, Any]) -> dict[str, Any]:
     """Build a conservative MusicXML + OCR evidence index.
@@ -235,6 +286,10 @@ def classify_ocr_text(text: str) -> str:
 
     if is_editorial_text(raw, cleaned, compact):
         return "editorial_text"
+
+    # Filtro de ruído de partitura (audit-66): antes de classificar como lyric
+    if _is_score_ocr_noise(raw, cleaned):
+        return "music_symbol_noise"
 
     if is_likely_lyric_word(raw, cleaned):
         return "possible_lyric"

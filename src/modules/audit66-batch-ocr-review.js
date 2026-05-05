@@ -342,12 +342,89 @@ function exportBatchReview() {
   a.click();
 }
 
+// Padrões de ruído de partitura — espelha o filtro do backend fusion_engine.py
+const _REPEATED = /^(.)\1+$/;
+const _UPPERCASE_NOISE = /^[B-DF-HJ-NP-TV-Z]{1,3}$/;
+const _CAPS_NO_VOWEL = /^[A-Z]{2,4}$/;
+const _CHORD_LIKE = /^[A-G](?:#|b)?(?:m|maj|min|dim|aug|sus|add)?\d*(?:\([^)]*\))?(?:\/[A-G](?:#|b)?)?$/;
+const _SINGLE_CHAR = /^.$/;
+const _SYMBOL_ONLY = /^[|/\\><+=~@#%^&*_`'"\[\]{}]+$/;
+
+function isScoreOcrNoise(text) {
+  if (!text) return false;
+  if (_SYMBOL_ONLY.test(text)) return true;
+  if (_REPEATED.test(text)) return true;
+  if (_UPPERCASE_NOISE.test(text)) return true;
+  if (_SINGLE_CHAR.test(text) && !_CHORD_LIKE.test(text)) return true;
+  if (_CAPS_NO_VOWEL.test(text) && !_CHORD_LIKE.test(text)) {
+    if (!/[AEIOUaeiou]/.test(text)) return true;
+  }
+  return false;
+}
+
+function rejectAllNoise() {
+  const protocol = loadProtocol();
+  const blocks = sortBlocks(getBlocks(protocol));
+  let count = 0;
+
+  const fusionBlocks = asArray(protocol?.fusion?.text_blocks_index);
+  const ocrBlocks = asArray(protocol?.ocr?.text_blocks);
+  const targetArray = fusionBlocks.length ? fusionBlocks : ocrBlocks;
+
+  blocks.forEach(block => {
+    const text = block?.text || '';
+    if (!isScoreOcrNoise(text)) return;
+    if (isAssigned(block)) return;
+
+    const id = block?.fusion_id || block?.id;
+    const idx = targetArray.findIndex(b => (b?.fusion_id || b?.id) === id);
+    if (idx >= 0) {
+      targetArray[idx].assignment = {
+        status: 'rejected_human_batch',
+        source: 'audit66_noise_filter',
+        rejected_at: now(),
+        review_id: uid(),
+        reason: 'score_ocr_noise_auto_rejected',
+      };
+      count++;
+    }
+
+    protocol.rejected_candidates ||= [];
+    protocol.rejected_candidates.push({
+      target_id: id, text, kind: 'noise',
+      source: 'audit66_noise_filter',
+      rejected_at: now(),
+    });
+  });
+
+  if (fusionBlocks.length && protocol?.fusion?.text_blocks_index) {
+    protocol.fusion.text_blocks_index = targetArray;
+  } else if (protocol?.ocr?.text_blocks) {
+    protocol.ocr.text_blocks = targetArray;
+  }
+
+  protocol.review ||= [];
+  protocol.review.push({
+    id: uid(), audit: 'audit-66', type: 'bulk_noise_rejection',
+    timestamp: now(), source: 'human_batch_explicit',
+    count_rejected: count,
+    effects: { modifies_protocol: true, modifies_ocr_raw_text: false, infers_lyrics: false, infers_harmony: false },
+  });
+
+  saveProtocol(protocol);
+  setOutput(`✓ ${count} bloco(s) de ruído rejeitados automaticamente.`);
+  renderBatch();
+}
+
 function initBatchReview() {
   const refresh = byId('btnBatchRefresh');
   if (refresh) refresh.onclick = renderBatch;
 
   const exportBtn = byId('btnBatchExport');
   if (exportBtn) exportBtn.onclick = exportBatchReview;
+
+  const rejectNoise = byId('btnBatchRejectNoise');
+  if (rejectNoise) rejectNoise.onclick = rejectAllNoise;
 
   const filterSel = byId('batchFilterKind');
   if (filterSel) filterSel.onchange = renderBatch;

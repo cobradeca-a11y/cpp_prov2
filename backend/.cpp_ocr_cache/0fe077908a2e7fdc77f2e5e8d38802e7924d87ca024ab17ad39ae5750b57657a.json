@@ -1,0 +1,9812 @@
+{
+  "cache_version": "audit-46",
+  "cache_key": "0fe077908a2e7fdc77f2e5e8d38802e7924d87ca024ab17ad39ae5750b57657a",
+  "metadata": {
+    "engine": "tesseract",
+    "page": 1
+  },
+  "text_blocks": [
+    {
+      "text": ".",
+      "confidence": 0.6,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 762,
+            "y": 142
+          },
+          {
+            "x": 771,
+            "y": 142
+          },
+          {
+            "x": 771,
+            "y": 151
+          },
+          {
+            "x": 762,
+            "y": 151
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Ainda",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 715,
+            "y": 142
+          },
+          {
+            "x": 866,
+            "y": 142
+          },
+          {
+            "x": 866,
+            "y": 182
+          },
+          {
+            "x": 715,
+            "y": 182
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Uma",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 883,
+            "y": 143
+          },
+          {
+            "x": 1001,
+            "y": 143
+          },
+          {
+            "x": 1001,
+            "y": 182
+          },
+          {
+            "x": 883,
+            "y": 182
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Vez",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1016,
+            "y": 143
+          },
+          {
+            "x": 1104,
+            "y": 143
+          },
+          {
+            "x": 1104,
+            "y": 182
+          },
+          {
+            "x": 1016,
+            "y": 182
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "(Ageu)",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 858,
+            "y": 189
+          },
+          {
+            "x": 960,
+            "y": 189
+          },
+          {
+            "x": 960,
+            "y": 222
+          },
+          {
+            "x": 858,
+            "y": 222
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Coro",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 132,
+            "y": 216
+          },
+          {
+            "x": 203,
+            "y": 216
+          },
+          {
+            "x": 203,
+            "y": 242
+          },
+          {
+            "x": 132,
+            "y": 242
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Francisco",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1315,
+            "y": 284
+          },
+          {
+            "x": 1433,
+            "y": 284
+          },
+          {
+            "x": 1433,
+            "y": 304
+          },
+          {
+            "x": 1315,
+            "y": 304
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Jose",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1442,
+            "y": 285
+          },
+          {
+            "x": 1494,
+            "y": 285
+          },
+          {
+            "x": 1494,
+            "y": 304
+          },
+          {
+            "x": 1442,
+            "y": 304
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Barbosa",
+      "confidence": 0.93,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1503,
+            "y": 285
+          },
+          {
+            "x": 1605,
+            "y": 285
+          },
+          {
+            "x": 1605,
+            "y": 304
+          },
+          {
+            "x": 1503,
+            "y": 304
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Condi",
+      "confidence": 0.92,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1614,
+            "y": 284
+          },
+          {
+            "x": 1688,
+            "y": 284
+          },
+          {
+            "x": 1688,
+            "y": 304
+          },
+          {
+            "x": 1614,
+            "y": 304
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Ageu",
+      "confidence": 0.92,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 131,
+            "y": 313
+          },
+          {
+            "x": 193,
+            "y": 313
+          },
+          {
+            "x": 193,
+            "y": 338
+          },
+          {
+            "x": 131,
+            "y": 338
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "2.6-9",
+      "confidence": 0.92,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 203,
+            "y": 313
+          },
+          {
+            "x": 261,
+            "y": 313
+          },
+          {
+            "x": 261,
+            "y": 332
+          },
+          {
+            "x": 203,
+            "y": 332
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Arr.",
+      "confidence": 0.92,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1177,
+            "y": 318
+          },
+          {
+            "x": 1221,
+            "y": 318
+          },
+          {
+            "x": 1221,
+            "y": 337
+          },
+          {
+            "x": 1177,
+            "y": 337
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Cordas:",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1232,
+            "y": 317
+          },
+          {
+            "x": 1318,
+            "y": 317
+          },
+          {
+            "x": 1318,
+            "y": 337
+          },
+          {
+            "x": 1232,
+            "y": 337
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Felipe",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1329,
+            "y": 317
+          },
+          {
+            "x": 1400,
+            "y": 317
+          },
+          {
+            "x": 1400,
+            "y": 343
+          },
+          {
+            "x": 1329,
+            "y": 343
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Guimarães",
+      "confidence": 0.84,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1409,
+            "y": 317
+          },
+          {
+            "x": 1533,
+            "y": 317
+          },
+          {
+            "x": 1533,
+            "y": 337
+          },
+          {
+            "x": 1409,
+            "y": 337
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "e",
+      "confidence": 0.92,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1542,
+            "y": 324
+          },
+          {
+            "x": 1553,
+            "y": 324
+          },
+          {
+            "x": 1553,
+            "y": 337
+          },
+          {
+            "x": 1542,
+            "y": 337
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "H.",
+      "confidence": 0.91,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1562,
+            "y": 318
+          },
+          {
+            "x": 1588,
+            "y": 318
+          },
+          {
+            "x": 1588,
+            "y": 337
+          },
+          {
+            "x": 1562,
+            "y": 337
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Santana",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1599,
+            "y": 317
+          },
+          {
+            "x": 1688,
+            "y": 317
+          },
+          {
+            "x": 1688,
+            "y": 337
+          },
+          {
+            "x": 1599,
+            "y": 337
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Arr.",
+      "confidence": 0.92,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1396,
+            "y": 352
+          },
+          {
+            "x": 1440,
+            "y": 352
+          },
+          {
+            "x": 1440,
+            "y": 371
+          },
+          {
+            "x": 1396,
+            "y": 371
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Vocal:",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1450,
+            "y": 351
+          },
+          {
+            "x": 1520,
+            "y": 351
+          },
+          {
+            "x": 1520,
+            "y": 371
+          },
+          {
+            "x": 1450,
+            "y": 371
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Fábio",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1531,
+            "y": 351
+          },
+          {
+            "x": 1595,
+            "y": 351
+          },
+          {
+            "x": 1595,
+            "y": 371
+          },
+          {
+            "x": 1531,
+            "y": 371
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Salazar",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1605,
+            "y": 351
+          },
+          {
+            "x": 1689,
+            "y": 351
+          },
+          {
+            "x": 1689,
+            "y": 371
+          },
+          {
+            "x": 1605,
+            "y": 371
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Cm",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 293,
+            "y": 390
+          },
+          {
+            "x": 329,
+            "y": 390
+          },
+          {
+            "x": 329,
+            "y": 409
+          },
+          {
+            "x": 293,
+            "y": 409
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "Ab",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 567,
+            "y": 389
+          },
+          {
+            "x": 595,
+            "y": 389
+          },
+          {
+            "x": 595,
+            "y": 409
+          },
+          {
+            "x": 567,
+            "y": 409
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "Fm",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 835,
+            "y": 391
+          },
+          {
+            "x": 868,
+            "y": 391
+          },
+          {
+            "x": 868,
+            "y": 409
+          },
+          {
+            "x": 835,
+            "y": 409
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "G",
+      "confidence": 0.91,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1138,
+            "y": 390
+          },
+          {
+            "x": 1156,
+            "y": 390
+          },
+          {
+            "x": 1156,
+            "y": 409
+          },
+          {
+            "x": 1138,
+            "y": 409
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "Cm",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1429,
+            "y": 390
+          },
+          {
+            "x": 1466,
+            "y": 390
+          },
+          {
+            "x": 1466,
+            "y": 409
+          },
+          {
+            "x": 1429,
+            "y": 409
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "DVI?)",
+      "confidence": 0.37,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 178,
+            "y": 451
+          },
+          {
+            "x": 324,
+            "y": 451
+          },
+          {
+            "x": 324,
+            "y": 475
+          },
+          {
+            "x": 178,
+            "y": 475
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "ll",
+      "confidence": 0.13,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 438,
+            "y": 451
+          },
+          {
+            "x": 624,
+            "y": 451
+          },
+          {
+            "x": 624,
+            "y": 475
+          },
+          {
+            "x": 438,
+            "y": 475
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "TJ",
+      "confidence": 0.38,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 912,
+            "y": 451
+          },
+          {
+            "x": 966,
+            "y": 451
+          },
+          {
+            "x": 966,
+            "y": 475
+          },
+          {
+            "x": 912,
+            "y": 475
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "TJ",
+      "confidence": 0.55,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 984,
+            "y": 451
+          },
+          {
+            "x": 1016,
+            "y": 451
+          },
+          {
+            "x": 1016,
+            "y": 475
+          },
+          {
+            "x": 984,
+            "y": 475
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "TT",
+      "confidence": 0.38,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1040,
+            "y": 451
+          },
+          {
+            "x": 1096,
+            "y": 451
+          },
+          {
+            "x": 1096,
+            "y": 475
+          },
+          {
+            "x": 1040,
+            "y": 475
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "1",
+      "confidence": 0.38,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1404,
+            "y": 455
+          },
+          {
+            "x": 1442,
+            "y": 455
+          },
+          {
+            "x": 1442,
+            "y": 467
+          },
+          {
+            "x": 1404,
+            "y": 467
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "IA",
+      "confidence": 0.42,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1636,
+            "y": 455
+          },
+          {
+            "x": 1687,
+            "y": 455
+          },
+          {
+            "x": 1687,
+            "y": 467
+          },
+          {
+            "x": 1636,
+            "y": 467
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "O",
+      "confidence": 0.73,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 173,
+            "y": 468
+          },
+          {
+            "x": 201,
+            "y": 468
+          },
+          {
+            "x": 201,
+            "y": 480
+          },
+          {
+            "x": 173,
+            "y": 480
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "DLC",
+      "confidence": 0.38,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 237,
+            "y": 464
+          },
+          {
+            "x": 325,
+            "y": 464
+          },
+          {
+            "x": 325,
+            "y": 488
+          },
+          {
+            "x": 237,
+            "y": 488
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "\"ee",
+      "confidence": 0.35,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 867,
+            "y": 464
+          },
+          {
+            "x": 1077,
+            "y": 464
+          },
+          {
+            "x": 1077,
+            "y": 488
+          },
+          {
+            "x": 867,
+            "y": 488
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "eee",
+      "confidence": 0.41,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1143,
+            "y": 468
+          },
+          {
+            "x": 1323,
+            "y": 468
+          },
+          {
+            "x": 1323,
+            "y": 480
+          },
+          {
+            "x": 1143,
+            "y": 480
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "ee",
+      "confidence": 0.4,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1467,
+            "y": 468
+          },
+          {
+            "x": 1645,
+            "y": 468
+          },
+          {
+            "x": 1645,
+            "y": 480
+          },
+          {
+            "x": 1467,
+            "y": 480
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "7",
+      "confidence": 0.25,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 174,
+            "y": 481
+          },
+          {
+            "x": 195,
+            "y": 481
+          },
+          {
+            "x": 195,
+            "y": 492
+          },
+          {
+            "x": 174,
+            "y": 492
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "SS",
+      "confidence": 0.25,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1049,
+            "y": 481
+          },
+          {
+            "x": 1114,
+            "y": 481
+          },
+          {
+            "x": 1114,
+            "y": 498
+          },
+          {
+            "x": 1049,
+            "y": 498
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "A",
+      "confidence": 0.12,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1122,
+            "y": 477
+          },
+          {
+            "x": 1152,
+            "y": 477
+          },
+          {
+            "x": 1152,
+            "y": 502
+          },
+          {
+            "x": 1122,
+            "y": 502
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "6",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 160,
+            "y": 660
+          },
+          {
+            "x": 172,
+            "y": 660
+          },
+          {
+            "x": 172,
+            "y": 679
+          },
+          {
+            "x": 160,
+            "y": 679
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Ab",
+      "confidence": 0.95,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 279,
+            "y": 659
+          },
+          {
+            "x": 307,
+            "y": 659
+          },
+          {
+            "x": 307,
+            "y": 679
+          },
+          {
+            "x": 279,
+            "y": 679
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "Fm",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 591,
+            "y": 661
+          },
+          {
+            "x": 625,
+            "y": 661
+          },
+          {
+            "x": 625,
+            "y": 679
+          },
+          {
+            "x": 591,
+            "y": 679
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "G",
+      "confidence": 0.93,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 943,
+            "y": 660
+          },
+          {
+            "x": 962,
+            "y": 660
+          },
+          {
+            "x": 962,
+            "y": 679
+          },
+          {
+            "x": 943,
+            "y": 679
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "—",
+      "confidence": 0.69,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1421,
+            "y": 677
+          },
+          {
+            "x": 1457,
+            "y": 677
+          },
+          {
+            "x": 1457,
+            "y": 685
+          },
+          {
+            "x": 1421,
+            "y": 685
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "A",
+      "confidence": 0.49,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 178,
+            "y": 728
+          },
+          {
+            "x": 190,
+            "y": 728
+          },
+          {
+            "x": 190,
+            "y": 737
+          },
+          {
+            "x": 178,
+            "y": 737
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "SS",
+      "confidence": 0.18,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 189,
+            "y": 725
+          },
+          {
+            "x": 1687,
+            "y": 725
+          },
+          {
+            "x": 1687,
+            "y": 741
+          },
+          {
+            "x": 189,
+            "y": 741
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "SS",
+      "confidence": 0.19,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 824,
+            "y": 721
+          },
+          {
+            "x": 966,
+            "y": 721
+          },
+          {
+            "x": 966,
+            "y": 745
+          },
+          {
+            "x": 824,
+            "y": 745
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "A",
+      "confidence": 0.5,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 998,
+            "y": 721
+          },
+          {
+            "x": 1022,
+            "y": 721
+          },
+          {
+            "x": 1022,
+            "y": 745
+          },
+          {
+            "x": 998,
+            "y": 745
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "A",
+      "confidence": 0.39,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1046,
+            "y": 721
+          },
+          {
+            "x": 1070,
+            "y": 721
+          },
+          {
+            "x": 1070,
+            "y": 745
+          },
+          {
+            "x": 1046,
+            "y": 745
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "A",
+      "confidence": 0.33,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1092,
+            "y": 721
+          },
+          {
+            "x": 1130,
+            "y": 721
+          },
+          {
+            "x": 1130,
+            "y": 745
+          },
+          {
+            "x": 1092,
+            "y": 745
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "eA",
+      "confidence": 0.38,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1164,
+            "y": 721
+          },
+          {
+            "x": 1222,
+            "y": 721
+          },
+          {
+            "x": 1222,
+            "y": 745
+          },
+          {
+            "x": 1164,
+            "y": 745
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "i",
+      "confidence": 0.31,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1284,
+            "y": 721
+          },
+          {
+            "x": 1298,
+            "y": 721
+          },
+          {
+            "x": 1298,
+            "y": 745
+          },
+          {
+            "x": 1284,
+            "y": 745
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "a",
+      "confidence": 0.18,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1338,
+            "y": 721
+          },
+          {
+            "x": 1430,
+            "y": 721
+          },
+          {
+            "x": 1430,
+            "y": 745
+          },
+          {
+            "x": 1338,
+            "y": 745
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "ee",
+      "confidence": 0.31,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 751,
+            "y": 734
+          },
+          {
+            "x": 1119,
+            "y": 734
+          },
+          {
+            "x": 1119,
+            "y": 758
+          },
+          {
+            "x": 751,
+            "y": 758
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Ee",
+      "confidence": 0.45,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1237,
+            "y": 734
+          },
+          {
+            "x": 1363,
+            "y": 734
+          },
+          {
+            "x": 1363,
+            "y": 758
+          },
+          {
+            "x": 1237,
+            "y": 758
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "ee",
+      "confidence": 0.13,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1377,
+            "y": 734
+          },
+          {
+            "x": 1387,
+            "y": 734
+          },
+          {
+            "x": 1387,
+            "y": 758
+          },
+          {
+            "x": 1377,
+            "y": 758
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "eSB",
+      "confidence": 0.27,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1465,
+            "y": 734
+          },
+          {
+            "x": 1691,
+            "y": 734
+          },
+          {
+            "x": 1691,
+            "y": 758
+          },
+          {
+            "x": 1465,
+            "y": 758
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "DV\"",
+      "confidence": 0.48,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 174,
+            "y": 747
+          },
+          {
+            "x": 245,
+            "y": 747
+          },
+          {
+            "x": 245,
+            "y": 772
+          },
+          {
+            "x": 174,
+            "y": 772
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "A",
+      "confidence": 0.14,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 488,
+            "y": 751
+          },
+          {
+            "x": 577,
+            "y": 751
+          },
+          {
+            "x": 577,
+            "y": 763
+          },
+          {
+            "x": 488,
+            "y": 763
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "(",
+      "confidence": 0.19,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 924,
+            "y": 747
+          },
+          {
+            "x": 935,
+            "y": 747
+          },
+          {
+            "x": 935,
+            "y": 772
+          },
+          {
+            "x": 924,
+            "y": 772
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "L\"A-",
+      "confidence": 0.56,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1586,
+            "y": 795
+          },
+          {
+            "x": 1660,
+            "y": 795
+          },
+          {
+            "x": 1660,
+            "y": 816
+          },
+          {
+            "x": 1586,
+            "y": 816
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "10",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 161,
+            "y": 930
+          },
+          {
+            "x": 187,
+            "y": 930
+          },
+          {
+            "x": 187,
+            "y": 949
+          },
+          {
+            "x": 161,
+            "y": 949
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Cm",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 275,
+            "y": 930
+          },
+          {
+            "x": 311,
+            "y": 930
+          },
+          {
+            "x": 311,
+            "y": 949
+          },
+          {
+            "x": 275,
+            "y": 949
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "Fm",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 621,
+            "y": 931
+          },
+          {
+            "x": 654,
+            "y": 931
+          },
+          {
+            "x": 654,
+            "y": 949
+          },
+          {
+            "x": 621,
+            "y": 949
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "Bb",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 989,
+            "y": 929
+          },
+          {
+            "x": 1014,
+            "y": 929
+          },
+          {
+            "x": 1014,
+            "y": 949
+          },
+          {
+            "x": 989,
+            "y": 949
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "Eb",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1313,
+            "y": 929
+          },
+          {
+            "x": 1338,
+            "y": 929
+          },
+          {
+            "x": 1338,
+            "y": 949
+          },
+          {
+            "x": 1313,
+            "y": 949
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "a",
+      "confidence": 0.54,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 178,
+            "y": 998
+          },
+          {
+            "x": 190,
+            "y": 998
+          },
+          {
+            "x": 190,
+            "y": 1007
+          },
+          {
+            "x": 178,
+            "y": 1007
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "A",
+      "confidence": 0.32,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 222,
+            "y": 995
+          },
+          {
+            "x": 238,
+            "y": 995
+          },
+          {
+            "x": 238,
+            "y": 1007
+          },
+          {
+            "x": 222,
+            "y": 1007
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "PR)",
+      "confidence": 0.34,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 246,
+            "y": 991
+          },
+          {
+            "x": 300,
+            "y": 991
+          },
+          {
+            "x": 300,
+            "y": 1015
+          },
+          {
+            "x": 246,
+            "y": 1015
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "e",
+      "confidence": 0.41,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 304,
+            "y": 995
+          },
+          {
+            "x": 357,
+            "y": 995
+          },
+          {
+            "x": 357,
+            "y": 1007
+          },
+          {
+            "x": 304,
+            "y": 1007
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "A",
+      "confidence": 0.3,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 614,
+            "y": 995
+          },
+          {
+            "x": 656,
+            "y": 995
+          },
+          {
+            "x": 656,
+            "y": 1007
+          },
+          {
+            "x": 614,
+            "y": 1007
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "A",
+      "confidence": 0.32,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 696,
+            "y": 995
+          },
+          {
+            "x": 714,
+            "y": 995
+          },
+          {
+            "x": 714,
+            "y": 1007
+          },
+          {
+            "x": 696,
+            "y": 1007
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "SS",
+      "confidence": 0.22,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 794,
+            "y": 995
+          },
+          {
+            "x": 905,
+            "y": 995
+          },
+          {
+            "x": 905,
+            "y": 1007
+          },
+          {
+            "x": 794,
+            "y": 1007
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "cel",
+      "confidence": 0.31,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1002,
+            "y": 991
+          },
+          {
+            "x": 1058,
+            "y": 991
+          },
+          {
+            "x": 1058,
+            "y": 1015
+          },
+          {
+            "x": 1002,
+            "y": 1015
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "CS",
+      "confidence": 0.16,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1086,
+            "y": 995
+          },
+          {
+            "x": 1136,
+            "y": 995
+          },
+          {
+            "x": 1136,
+            "y": 1007
+          },
+          {
+            "x": 1086,
+            "y": 1007
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": ">",
+      "confidence": 0.37,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1240,
+            "y": 995
+          },
+          {
+            "x": 1294,
+            "y": 995
+          },
+          {
+            "x": 1294,
+            "y": 1007
+          },
+          {
+            "x": 1240,
+            "y": 1007
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "SO",
+      "confidence": 0.28,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1330,
+            "y": 991
+          },
+          {
+            "x": 1354,
+            "y": 991
+          },
+          {
+            "x": 1354,
+            "y": 1015
+          },
+          {
+            "x": 1330,
+            "y": 1015
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "0",
+      "confidence": 0.3,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1378,
+            "y": 995
+          },
+          {
+            "x": 1384,
+            "y": 995
+          },
+          {
+            "x": 1384,
+            "y": 1007
+          },
+          {
+            "x": 1378,
+            "y": 1007
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "SO",
+      "confidence": 0.13,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1432,
+            "y": 995
+          },
+          {
+            "x": 1500,
+            "y": 995
+          },
+          {
+            "x": 1500,
+            "y": 1007
+          },
+          {
+            "x": 1432,
+            "y": 1007
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "E",
+      "confidence": 0.31,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1542,
+            "y": 995
+          },
+          {
+            "x": 1584,
+            "y": 995
+          },
+          {
+            "x": 1584,
+            "y": 1007
+          },
+          {
+            "x": 1542,
+            "y": 1007
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "e",
+      "confidence": 0.32,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1622,
+            "y": 998
+          },
+          {
+            "x": 1652,
+            "y": 998
+          },
+          {
+            "x": 1652,
+            "y": 1007
+          },
+          {
+            "x": 1622,
+            "y": 1007
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "|",
+      "confidence": 0.62,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1674,
+            "y": 995
+          },
+          {
+            "x": 1687,
+            "y": 995
+          },
+          {
+            "x": 1687,
+            "y": 1007
+          },
+          {
+            "x": 1674,
+            "y": 1007
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Far",
+      "confidence": 0.39,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 173,
+            "y": 1008
+          },
+          {
+            "x": 199,
+            "y": 1008
+          },
+          {
+            "x": 199,
+            "y": 1020
+          },
+          {
+            "x": 173,
+            "y": 1020
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "LA",
+      "confidence": 0.19,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 211,
+            "y": 1004
+          },
+          {
+            "x": 233,
+            "y": 1004
+          },
+          {
+            "x": 233,
+            "y": 1028
+          },
+          {
+            "x": 211,
+            "y": 1028
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "|",
+      "confidence": 0.2,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 245,
+            "y": 1009
+          },
+          {
+            "x": 249,
+            "y": 1009
+          },
+          {
+            "x": 249,
+            "y": 1020
+          },
+          {
+            "x": 245,
+            "y": 1020
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "|e",
+      "confidence": 0.13,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 295,
+            "y": 1008
+          },
+          {
+            "x": 357,
+            "y": 1008
+          },
+          {
+            "x": 357,
+            "y": 1020
+          },
+          {
+            "x": 295,
+            "y": 1020
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "po",
+      "confidence": 0.34,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 509,
+            "y": 1004
+          },
+          {
+            "x": 525,
+            "y": 1004
+          },
+          {
+            "x": 525,
+            "y": 1028
+          },
+          {
+            "x": 509,
+            "y": 1028
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "eo",
+      "confidence": 0.36,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 551,
+            "y": 1004
+          },
+          {
+            "x": 579,
+            "y": 1004
+          },
+          {
+            "x": 579,
+            "y": 1028
+          },
+          {
+            "x": 551,
+            "y": 1028
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "|",
+      "confidence": 0.36,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 603,
+            "y": 1004
+          },
+          {
+            "x": 615,
+            "y": 1004
+          },
+          {
+            "x": 615,
+            "y": 1028
+          },
+          {
+            "x": 603,
+            "y": 1028
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Ll",
+      "confidence": 0.15,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 625,
+            "y": 1004
+          },
+          {
+            "x": 641,
+            "y": 1004
+          },
+          {
+            "x": 641,
+            "y": 1028
+          },
+          {
+            "x": 625,
+            "y": 1028
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "CCL",
+      "confidence": 0.41,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 647,
+            "y": 1004
+          },
+          {
+            "x": 667,
+            "y": 1004
+          },
+          {
+            "x": 667,
+            "y": 1028
+          },
+          {
+            "x": 647,
+            "y": 1028
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "8",
+      "confidence": 0.22,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 675,
+            "y": 1004
+          },
+          {
+            "x": 687,
+            "y": 1004
+          },
+          {
+            "x": 687,
+            "y": 1028
+          },
+          {
+            "x": 675,
+            "y": 1028
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "ht",
+      "confidence": 0.28,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 701,
+            "y": 1004
+          },
+          {
+            "x": 729,
+            "y": 1004
+          },
+          {
+            "x": 729,
+            "y": 1028
+          },
+          {
+            "x": 701,
+            "y": 1028
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Clo",
+      "confidence": 0.23,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 743,
+            "y": 1004
+          },
+          {
+            "x": 773,
+            "y": 1004
+          },
+          {
+            "x": 773,
+            "y": 1028
+          },
+          {
+            "x": 743,
+            "y": 1028
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "oo.",
+      "confidence": 0.36,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 793,
+            "y": 1008
+          },
+          {
+            "x": 903,
+            "y": 1008
+          },
+          {
+            "x": 903,
+            "y": 1020
+          },
+          {
+            "x": 793,
+            "y": 1020
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "||",
+      "confidence": 0.13,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 931,
+            "y": 1008
+          },
+          {
+            "x": 1009,
+            "y": 1008
+          },
+          {
+            "x": 1009,
+            "y": 1020
+          },
+          {
+            "x": 931,
+            "y": 1020
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": ".",
+      "confidence": 0.49,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1145,
+            "y": 1008
+          },
+          {
+            "x": 1156,
+            "y": 1008
+          },
+          {
+            "x": 1156,
+            "y": 1020
+          },
+          {
+            "x": 1145,
+            "y": 1020
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "—_",
+      "confidence": 0.47,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1195,
+            "y": 1004
+          },
+          {
+            "x": 1227,
+            "y": 1004
+          },
+          {
+            "x": 1227,
+            "y": 1028
+          },
+          {
+            "x": 1195,
+            "y": 1028
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "|",
+      "confidence": 0.18,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1267,
+            "y": 1008
+          },
+          {
+            "x": 1294,
+            "y": 1008
+          },
+          {
+            "x": 1294,
+            "y": 1020
+          },
+          {
+            "x": 1267,
+            "y": 1020
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "/",
+      "confidence": 0.71,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1311,
+            "y": 1008
+          },
+          {
+            "x": 1324,
+            "y": 1008
+          },
+          {
+            "x": 1324,
+            "y": 1020
+          },
+          {
+            "x": 1311,
+            "y": 1020
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "@o",
+      "confidence": 0.28,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1351,
+            "y": 1004
+          },
+          {
+            "x": 1379,
+            "y": 1004
+          },
+          {
+            "x": 1379,
+            "y": 1028
+          },
+          {
+            "x": 1351,
+            "y": 1028
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "ao",
+      "confidence": 0.23,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1409,
+            "y": 1004
+          },
+          {
+            "x": 1433,
+            "y": 1004
+          },
+          {
+            "x": 1433,
+            "y": 1028
+          },
+          {
+            "x": 1409,
+            "y": 1028
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "~~",
+      "confidence": 0.52,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1455,
+            "y": 1008
+          },
+          {
+            "x": 1519,
+            "y": 1008
+          },
+          {
+            "x": 1519,
+            "y": 1020
+          },
+          {
+            "x": 1455,
+            "y": 1020
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "_|____|_}",
+      "confidence": 0.26,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1535,
+            "y": 1004
+          },
+          {
+            "x": 1691,
+            "y": 1004
+          },
+          {
+            "x": 1691,
+            "y": 1028
+          },
+          {
+            "x": 1535,
+            "y": 1028
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "in",
+      "confidence": 0.93,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 282,
+            "y": 1067
+          },
+          {
+            "x": 304,
+            "y": 1067
+          },
+          {
+            "x": 304,
+            "y": 1088
+          },
+          {
+            "x": 282,
+            "y": 1088
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "-da",
+      "confidence": 0.9,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 323,
+            "y": 1067
+          },
+          {
+            "x": 363,
+            "y": 1067
+          },
+          {
+            "x": 363,
+            "y": 1088
+          },
+          {
+            "x": 323,
+            "y": 1088
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "u-ma",
+      "confidence": 0.92,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 386,
+            "y": 1074
+          },
+          {
+            "x": 451,
+            "y": 1074
+          },
+          {
+            "x": 451,
+            "y": 1088
+          },
+          {
+            "x": 386,
+            "y": 1088
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "da",
+      "confidence": 0.94,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 665,
+            "y": 1067
+          },
+          {
+            "x": 692,
+            "y": 1067
+          },
+          {
+            "x": 692,
+            "y": 1088
+          },
+          {
+            "x": 665,
+            "y": 1088
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "qui",
+      "confidence": 0.95,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 702,
+            "y": 1067
+          },
+          {
+            "x": 739,
+            "y": 1067
+          },
+          {
+            "x": 739,
+            "y": 1094
+          },
+          {
+            "x": 702,
+            "y": 1094
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "a",
+      "confidence": 0.87,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 757,
+            "y": 1074
+          },
+          {
+            "x": 769,
+            "y": 1074
+          },
+          {
+            "x": 769,
+            "y": 1088
+          },
+          {
+            "x": 757,
+            "y": 1088
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "pou-co,",
+      "confidence": 0.87,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 782,
+            "y": 1074
+          },
+          {
+            "x": 875,
+            "y": 1074
+          },
+          {
+            "x": 875,
+            "y": 1094
+          },
+          {
+            "x": 782,
+            "y": 1094
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "e",
+      "confidence": 0.92,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 892,
+            "y": 1074
+          },
+          {
+            "x": 903,
+            "y": 1074
+          },
+          {
+            "x": 903,
+            "y": 1088
+          },
+          {
+            "x": 892,
+            "y": 1088
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "fa",
+      "confidence": 0.89,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 929,
+            "y": 1067
+          },
+          {
+            "x": 950,
+            "y": 1067
+          },
+          {
+            "x": 950,
+            "y": 1088
+          },
+          {
+            "x": 929,
+            "y": 1088
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "-",
+      "confidence": 0.89,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 964,
+            "y": 1080
+          },
+          {
+            "x": 971,
+            "y": 1080
+          },
+          {
+            "x": 971,
+            "y": 1082
+          },
+          {
+            "x": 964,
+            "y": 1082
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "rei",
+      "confidence": 0.93,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 986,
+            "y": 1067
+          },
+          {
+            "x": 1016,
+            "y": 1067
+          },
+          {
+            "x": 1016,
+            "y": 1088
+          },
+          {
+            "x": 986,
+            "y": 1088
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "tre-mer",
+      "confidence": 0.9,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1036,
+            "y": 1070
+          },
+          {
+            "x": 1125,
+            "y": 1070
+          },
+          {
+            "x": 1125,
+            "y": 1088
+          },
+          {
+            "x": 1036,
+            "y": 1088
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "os",
+      "confidence": 0.87,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1136,
+            "y": 1074
+          },
+          {
+            "x": 1161,
+            "y": 1074
+          },
+          {
+            "x": 1161,
+            "y": 1088
+          },
+          {
+            "x": 1136,
+            "y": 1088
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "céus,",
+      "confidence": 0.87,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1181,
+            "y": 1068
+          },
+          {
+            "x": 1239,
+            "y": 1068
+          },
+          {
+            "x": 1239,
+            "y": 1092
+          },
+          {
+            "x": 1181,
+            "y": 1092
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "e",
+      "confidence": 0.92,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1361,
+            "y": 1074
+          },
+          {
+            "x": 1372,
+            "y": 1074
+          },
+          {
+            "x": 1372,
+            "y": 1088
+          },
+          {
+            "x": 1361,
+            "y": 1088
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "to-da",
+      "confidence": 0.72,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1407,
+            "y": 1067
+          },
+          {
+            "x": 1478,
+            "y": 1067
+          },
+          {
+            "x": 1478,
+            "y": 1088
+          },
+          {
+            "x": 1407,
+            "y": 1088
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "ter-ra,",
+      "confidence": 0.93,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1496,
+            "y": 1070
+          },
+          {
+            "x": 1571,
+            "y": 1070
+          },
+          {
+            "x": 1571,
+            "y": 1093
+          },
+          {
+            "x": 1496,
+            "y": 1093
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "to",
+      "confidence": 0.93,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1584,
+            "y": 1070
+          },
+          {
+            "x": 1605,
+            "y": 1070
+          },
+          {
+            "x": 1605,
+            "y": 1088
+          },
+          {
+            "x": 1584,
+            "y": 1088
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "-",
+      "confidence": 0.91,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1617,
+            "y": 1080
+          },
+          {
+            "x": 1624,
+            "y": 1080
+          },
+          {
+            "x": 1624,
+            "y": 1082
+          },
+          {
+            "x": 1617,
+            "y": 1082
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "do",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1636,
+            "y": 1067
+          },
+          {
+            "x": 1664,
+            "y": 1067
+          },
+          {
+            "x": 1664,
+            "y": 1088
+          },
+          {
+            "x": 1636,
+            "y": 1088
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "14",
+      "confidence": 0.95,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 161,
+            "y": 1199
+          },
+          {
+            "x": 187,
+            "y": 1199
+          },
+          {
+            "x": 187,
+            "y": 1218
+          },
+          {
+            "x": 161,
+            "y": 1218
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Ab",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 279,
+            "y": 1198
+          },
+          {
+            "x": 307,
+            "y": 1198
+          },
+          {
+            "x": 307,
+            "y": 1218
+          },
+          {
+            "x": 279,
+            "y": 1218
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "Fm",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 595,
+            "y": 1200
+          },
+          {
+            "x": 628,
+            "y": 1200
+          },
+          {
+            "x": 628,
+            "y": 1218
+          },
+          {
+            "x": 595,
+            "y": 1218
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "G",
+      "confidence": 0.92,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1228,
+            "y": 1199
+          },
+          {
+            "x": 1247,
+            "y": 1199
+          },
+          {
+            "x": 1247,
+            "y": 1218
+          },
+          {
+            "x": 1228,
+            "y": 1218
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "A",
+      "confidence": 0.52,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 178,
+            "y": 1267
+          },
+          {
+            "x": 190,
+            "y": 1267
+          },
+          {
+            "x": 190,
+            "y": 1277
+          },
+          {
+            "x": 178,
+            "y": 1277
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "=",
+      "confidence": 0.55,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 216,
+            "y": 1265
+          },
+          {
+            "x": 217,
+            "y": 1265
+          },
+          {
+            "x": 217,
+            "y": 1277
+          },
+          {
+            "x": 216,
+            "y": 1277
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "VA",
+      "confidence": 0.39,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 226,
+            "y": 1261
+          },
+          {
+            "x": 238,
+            "y": 1261
+          },
+          {
+            "x": 238,
+            "y": 1285
+          },
+          {
+            "x": 226,
+            "y": 1285
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "cs",
+      "confidence": 0.45,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 292,
+            "y": 1261
+          },
+          {
+            "x": 350,
+            "y": 1261
+          },
+          {
+            "x": 350,
+            "y": 1285
+          },
+          {
+            "x": 292,
+            "y": 1285
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "O",
+      "confidence": 0.35,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 370,
+            "y": 1265
+          },
+          {
+            "x": 392,
+            "y": 1265
+          },
+          {
+            "x": 392,
+            "y": 1277
+          },
+          {
+            "x": 370,
+            "y": 1277
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "e",
+      "confidence": 0.36,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 408,
+            "y": 1268
+          },
+          {
+            "x": 428,
+            "y": 1268
+          },
+          {
+            "x": 428,
+            "y": 1277
+          },
+          {
+            "x": 408,
+            "y": 1277
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "O",
+      "confidence": 0.34,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 448,
+            "y": 1265
+          },
+          {
+            "x": 464,
+            "y": 1265
+          },
+          {
+            "x": 464,
+            "y": 1277
+          },
+          {
+            "x": 448,
+            "y": 1277
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "e",
+      "confidence": 0.34,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 470,
+            "y": 1268
+          },
+          {
+            "x": 488,
+            "y": 1268
+          },
+          {
+            "x": 488,
+            "y": 1277
+          },
+          {
+            "x": 470,
+            "y": 1277
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "a",
+      "confidence": 0.28,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 520,
+            "y": 1265
+          },
+          {
+            "x": 562,
+            "y": 1265
+          },
+          {
+            "x": 562,
+            "y": 1277
+          },
+          {
+            "x": 520,
+            "y": 1277
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "ces",
+      "confidence": 0.45,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 618,
+            "y": 1261
+          },
+          {
+            "x": 664,
+            "y": 1261
+          },
+          {
+            "x": 664,
+            "y": 1285
+          },
+          {
+            "x": 618,
+            "y": 1285
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "es",
+      "confidence": 0.22,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 712,
+            "y": 1261
+          },
+          {
+            "x": 762,
+            "y": 1261
+          },
+          {
+            "x": 762,
+            "y": 1285
+          },
+          {
+            "x": 712,
+            "y": 1285
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "CS",
+      "confidence": 0.25,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 844,
+            "y": 1265
+          },
+          {
+            "x": 954,
+            "y": 1265
+          },
+          {
+            "x": 954,
+            "y": 1277
+          },
+          {
+            "x": 844,
+            "y": 1277
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "SS",
+      "confidence": 0.26,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 972,
+            "y": 1265
+          },
+          {
+            "x": 1036,
+            "y": 1265
+          },
+          {
+            "x": 1036,
+            "y": 1277
+          },
+          {
+            "x": 972,
+            "y": 1277
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "SS",
+      "confidence": 0.25,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1098,
+            "y": 1261
+          },
+          {
+            "x": 1176,
+            "y": 1261
+          },
+          {
+            "x": 1176,
+            "y": 1285
+          },
+          {
+            "x": 1098,
+            "y": 1285
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "O",
+      "confidence": 0.33,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1218,
+            "y": 1265
+          },
+          {
+            "x": 1244,
+            "y": 1265
+          },
+          {
+            "x": 1244,
+            "y": 1277
+          },
+          {
+            "x": 1218,
+            "y": 1277
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "SS",
+      "confidence": 0.16,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1248,
+            "y": 1265
+          },
+          {
+            "x": 1366,
+            "y": 1265
+          },
+          {
+            "x": 1366,
+            "y": 1277
+          },
+          {
+            "x": 1248,
+            "y": 1277
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "A",
+      "confidence": 0.32,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1472,
+            "y": 1265
+          },
+          {
+            "x": 1488,
+            "y": 1265
+          },
+          {
+            "x": 1488,
+            "y": 1277
+          },
+          {
+            "x": 1472,
+            "y": 1277
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "e",
+      "confidence": 0.1,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1540,
+            "y": 1265
+          },
+          {
+            "x": 1616,
+            "y": 1265
+          },
+          {
+            "x": 1616,
+            "y": 1277
+          },
+          {
+            "x": 1540,
+            "y": 1277
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "O",
+      "confidence": 0.77,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 173,
+            "y": 1278
+          },
+          {
+            "x": 201,
+            "y": 1278
+          },
+          {
+            "x": 201,
+            "y": 1290
+          },
+          {
+            "x": 173,
+            "y": 1290
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "py",
+      "confidence": 0.26,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 245,
+            "y": 1274
+          },
+          {
+            "x": 309,
+            "y": 1274
+          },
+          {
+            "x": 309,
+            "y": 1298
+          },
+          {
+            "x": 245,
+            "y": 1298
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "2",
+      "confidence": 0.55,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1511,
+            "y": 1278
+          },
+          {
+            "x": 1516,
+            "y": 1278
+          },
+          {
+            "x": 1516,
+            "y": 1290
+          },
+          {
+            "x": 1511,
+            "y": 1290
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "|",
+      "confidence": 0.34,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1541,
+            "y": 1278
+          },
+          {
+            "x": 1545,
+            "y": 1278
+          },
+          {
+            "x": 1545,
+            "y": 1290
+          },
+          {
+            "x": 1541,
+            "y": 1290
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "co",
+      "confidence": 0.28,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 819,
+            "y": 1291
+          },
+          {
+            "x": 890,
+            "y": 1291
+          },
+          {
+            "x": 890,
+            "y": 1321
+          },
+          {
+            "x": 819,
+            "y": 1321
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "|i|jfSga",
+      "confidence": 0.2,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 910,
+            "y": 1287
+          },
+          {
+            "x": 1103,
+            "y": 1287
+          },
+          {
+            "x": 1103,
+            "y": 1325
+          },
+          {
+            "x": 910,
+            "y": 1325
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Aa",
+      "confidence": 0.4,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1138,
+            "y": 1291
+          },
+          {
+            "x": 1182,
+            "y": 1291
+          },
+          {
+            "x": 1182,
+            "y": 1316
+          },
+          {
+            "x": 1138,
+            "y": 1316
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "o",
+      "confidence": 0.26,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1188,
+            "y": 1291
+          },
+          {
+            "x": 1207,
+            "y": 1291
+          },
+          {
+            "x": 1207,
+            "y": 1303
+          },
+          {
+            "x": 1188,
+            "y": 1303
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "mar",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 270,
+            "y": 1350
+          },
+          {
+            "x": 316,
+            "y": 1350
+          },
+          {
+            "x": 316,
+            "y": 1364
+          },
+          {
+            "x": 270,
+            "y": 1364
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "cater-rase-ca,",
+      "confidence": 0.79,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 327,
+            "y": 1347
+          },
+          {
+            "x": 534,
+            "y": 1347
+          },
+          {
+            "x": 534,
+            "y": 1373
+          },
+          {
+            "x": 327,
+            "y": 1373
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "fa-rei",
+      "confidence": 0.91,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 548,
+            "y": 1343
+          },
+          {
+            "x": 625,
+            "y": 1343
+          },
+          {
+            "x": 625,
+            "y": 1364
+          },
+          {
+            "x": 548,
+            "y": 1364
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "tre-merna-ções,",
+      "confidence": 0.28,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 642,
+            "y": 1344
+          },
+          {
+            "x": 891,
+            "y": 1344
+          },
+          {
+            "x": 891,
+            "y": 1370
+          },
+          {
+            "x": 642,
+            "y": 1370
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "eenfimvi-rá",
+      "confidence": 0.28,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 942,
+            "y": 1343
+          },
+          {
+            "x": 1160,
+            "y": 1343
+          },
+          {
+            "x": 1160,
+            "y": 1364
+          },
+          {
+            "x": 942,
+            "y": 1364
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "o",
+      "confidence": 0.78,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1178,
+            "y": 1350
+          },
+          {
+            "x": 1191,
+            "y": 1350
+          },
+          {
+            "x": 1191,
+            "y": 1364
+          },
+          {
+            "x": 1178,
+            "y": 1364
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "de-se-ja-do",
+      "confidence": 0.9,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1224,
+            "y": 1343
+          },
+          {
+            "x": 1373,
+            "y": 1343
+          },
+          {
+            "x": 1373,
+            "y": 1371
+          },
+          {
+            "x": 1224,
+            "y": 1371
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "das",
+      "confidence": 0.93,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1385,
+            "y": 1343
+          },
+          {
+            "x": 1423,
+            "y": 1343
+          },
+          {
+            "x": 1423,
+            "y": 1364
+          },
+          {
+            "x": 1385,
+            "y": 1364
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "19",
+      "confidence": 0.95,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 161,
+            "y": 1469
+          },
+          {
+            "x": 187,
+            "y": 1469
+          },
+          {
+            "x": 187,
+            "y": 1488
+          },
+          {
+            "x": 161,
+            "y": 1488
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "x",
+      "confidence": 0.26,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 227,
+            "y": 1433
+          },
+          {
+            "x": 263,
+            "y": 1433
+          },
+          {
+            "x": 263,
+            "y": 1476
+          },
+          {
+            "x": 227,
+            "y": 1476
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Cm",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 275,
+            "y": 1469
+          },
+          {
+            "x": 311,
+            "y": 1469
+          },
+          {
+            "x": 311,
+            "y": 1488
+          },
+          {
+            "x": 275,
+            "y": 1488
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "Cc",
+      "confidence": 0.64,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 459,
+            "y": 1465
+          },
+          {
+            "x": 480,
+            "y": 1465
+          },
+          {
+            "x": 480,
+            "y": 1497
+          },
+          {
+            "x": 459,
+            "y": 1497
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Fm",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 624,
+            "y": 1470
+          },
+          {
+            "x": 657,
+            "y": 1470
+          },
+          {
+            "x": 657,
+            "y": 1488
+          },
+          {
+            "x": 624,
+            "y": 1488
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "Bb",
+      "confidence": 0.95,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 975,
+            "y": 1468
+          },
+          {
+            "x": 1000,
+            "y": 1468
+          },
+          {
+            "x": 1000,
+            "y": 1488
+          },
+          {
+            "x": 975,
+            "y": 1488
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "Bb?",
+      "confidence": 0.84,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1164,
+            "y": 1468
+          },
+          {
+            "x": 1198,
+            "y": 1468
+          },
+          {
+            "x": 1198,
+            "y": 1488
+          },
+          {
+            "x": 1164,
+            "y": 1488
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Eb",
+      "confidence": 0.93,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1363,
+            "y": 1468
+          },
+          {
+            "x": 1389,
+            "y": 1468
+          },
+          {
+            "x": 1389,
+            "y": 1488
+          },
+          {
+            "x": 1363,
+            "y": 1488
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "by",
+      "confidence": 0.34,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 160,
+            "y": 1499
+          },
+          {
+            "x": 244,
+            "y": 1499
+          },
+          {
+            "x": 244,
+            "y": 1543
+          },
+          {
+            "x": 160,
+            "y": 1543
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "a",
+      "confidence": 0.18,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 291,
+            "y": 1522
+          },
+          {
+            "x": 340,
+            "y": 1522
+          },
+          {
+            "x": 340,
+            "y": 1534
+          },
+          {
+            "x": 291,
+            "y": 1534
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "tp",
+      "confidence": 0.25,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 599,
+            "y": 1512
+          },
+          {
+            "x": 1216,
+            "y": 1512
+          },
+          {
+            "x": 1216,
+            "y": 1534
+          },
+          {
+            "x": 599,
+            "y": 1534
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "np",
+      "confidence": 0.23,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1263,
+            "y": 1522
+          },
+          {
+            "x": 1407,
+            "y": 1522
+          },
+          {
+            "x": 1407,
+            "y": 1534
+          },
+          {
+            "x": 1263,
+            "y": 1534
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "pn",
+      "confidence": 0.35,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1454,
+            "y": 1522
+          },
+          {
+            "x": 1531,
+            "y": 1522
+          },
+          {
+            "x": 1531,
+            "y": 1534
+          },
+          {
+            "x": 1454,
+            "y": 1534
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "E",
+      "confidence": 0.14,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1545,
+            "y": 1522
+          },
+          {
+            "x": 1572,
+            "y": 1522
+          },
+          {
+            "x": 1572,
+            "y": 1534
+          },
+          {
+            "x": 1545,
+            "y": 1534
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "A",
+      "confidence": 0.48,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 160,
+            "y": 1535
+          },
+          {
+            "x": 190,
+            "y": 1535
+          },
+          {
+            "x": 190,
+            "y": 1547
+          },
+          {
+            "x": 160,
+            "y": 1547
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "5",
+      "confidence": 0.19,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 218,
+            "y": 1535
+          },
+          {
+            "x": 230,
+            "y": 1535
+          },
+          {
+            "x": 230,
+            "y": 1547
+          },
+          {
+            "x": 218,
+            "y": 1547
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "SS",
+      "confidence": 0.18,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 272,
+            "y": 1535
+          },
+          {
+            "x": 340,
+            "y": 1535
+          },
+          {
+            "x": 340,
+            "y": 1547
+          },
+          {
+            "x": 272,
+            "y": 1547
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "nS",
+      "confidence": 0.29,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 592,
+            "y": 1535
+          },
+          {
+            "x": 762,
+            "y": 1535
+          },
+          {
+            "x": 762,
+            "y": 1547
+          },
+          {
+            "x": 592,
+            "y": 1547
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "OF",
+      "confidence": 0.14,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 864,
+            "y": 1531
+          },
+          {
+            "x": 988,
+            "y": 1531
+          },
+          {
+            "x": 988,
+            "y": 1555
+          },
+          {
+            "x": 864,
+            "y": 1555
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "SN",
+      "confidence": 0.32,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1138,
+            "y": 1535
+          },
+          {
+            "x": 1232,
+            "y": 1535
+          },
+          {
+            "x": 1232,
+            "y": 1547
+          },
+          {
+            "x": 1138,
+            "y": 1547
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "SO",
+      "confidence": 0.22,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1238,
+            "y": 1535
+          },
+          {
+            "x": 1366,
+            "y": 1535
+          },
+          {
+            "x": 1366,
+            "y": 1547
+          },
+          {
+            "x": 1238,
+            "y": 1547
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "SN",
+      "confidence": 0.26,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1428,
+            "y": 1531
+          },
+          {
+            "x": 1506,
+            "y": 1531
+          },
+          {
+            "x": 1506,
+            "y": 1555
+          },
+          {
+            "x": 1428,
+            "y": 1555
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "tt",
+      "confidence": 0.5,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 160,
+            "y": 1548
+          },
+          {
+            "x": 331,
+            "y": 1548
+          },
+          {
+            "x": 331,
+            "y": 1560
+          },
+          {
+            "x": 160,
+            "y": 1560
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "DD",
+      "confidence": 0.4,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 242,
+            "y": 1544
+          },
+          {
+            "x": 268,
+            "y": 1544
+          },
+          {
+            "x": 268,
+            "y": 1568
+          },
+          {
+            "x": 242,
+            "y": 1568
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "9",
+      "confidence": 0.5,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 284,
+            "y": 1544
+          },
+          {
+            "x": 302,
+            "y": 1544
+          },
+          {
+            "x": 302,
+            "y": 1568
+          },
+          {
+            "x": 284,
+            "y": 1568
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "@",
+      "confidence": 0.27,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 326,
+            "y": 1544
+          },
+          {
+            "x": 342,
+            "y": 1544
+          },
+          {
+            "x": 342,
+            "y": 1568
+          },
+          {
+            "x": 326,
+            "y": 1568
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "2»",
+      "confidence": 0.38,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 368,
+            "y": 1544
+          },
+          {
+            "x": 386,
+            "y": 1544
+          },
+          {
+            "x": 386,
+            "y": 1568
+          },
+          {
+            "x": 368,
+            "y": 1568
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "coco",
+      "confidence": 0.2,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 440,
+            "y": 1544
+          },
+          {
+            "x": 537,
+            "y": 1544
+          },
+          {
+            "x": 537,
+            "y": 1568
+          },
+          {
+            "x": 440,
+            "y": 1568
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "2",
+      "confidence": 0.31,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 664,
+            "y": 1544
+          },
+          {
+            "x": 680,
+            "y": 1544
+          },
+          {
+            "x": 680,
+            "y": 1568
+          },
+          {
+            "x": 664,
+            "y": 1568
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "2",
+      "confidence": 0.53,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 704,
+            "y": 1548
+          },
+          {
+            "x": 712,
+            "y": 1548
+          },
+          {
+            "x": 712,
+            "y": 1560
+          },
+          {
+            "x": 704,
+            "y": 1560
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "2",
+      "confidence": 0.51,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 746,
+            "y": 1548
+          },
+          {
+            "x": 753,
+            "y": 1548
+          },
+          {
+            "x": 753,
+            "y": 1560
+          },
+          {
+            "x": 746,
+            "y": 1560
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "6,",
+      "confidence": 0.49,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 780,
+            "y": 1548
+          },
+          {
+            "x": 814,
+            "y": 1548
+          },
+          {
+            "x": 814,
+            "y": 1560
+          },
+          {
+            "x": 780,
+            "y": 1560
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "4",
+      "confidence": 0.82,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 830,
+            "y": 1549
+          },
+          {
+            "x": 841,
+            "y": 1549
+          },
+          {
+            "x": 841,
+            "y": 1559
+          },
+          {
+            "x": 830,
+            "y": 1559
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "|",
+      "confidence": 0.31,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 916,
+            "y": 1548
+          },
+          {
+            "x": 957,
+            "y": 1548
+          },
+          {
+            "x": 957,
+            "y": 1560
+          },
+          {
+            "x": 916,
+            "y": 1560
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "i",
+      "confidence": 0.62,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 980,
+            "y": 1548
+          },
+          {
+            "x": 986,
+            "y": 1548
+          },
+          {
+            "x": 986,
+            "y": 1560
+          },
+          {
+            "x": 980,
+            "y": 1560
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": ">.",
+      "confidence": 0.54,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1024,
+            "y": 1544
+          },
+          {
+            "x": 1042,
+            "y": 1544
+          },
+          {
+            "x": 1042,
+            "y": 1568
+          },
+          {
+            "x": 1024,
+            "y": 1568
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "23s",
+      "confidence": 0.4,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1114,
+            "y": 1544
+          },
+          {
+            "x": 1136,
+            "y": 1544
+          },
+          {
+            "x": 1136,
+            "y": 1568
+          },
+          {
+            "x": 1114,
+            "y": 1568
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "82",
+      "confidence": 0.61,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1164,
+            "y": 1544
+          },
+          {
+            "x": 1186,
+            "y": 1544
+          },
+          {
+            "x": 1186,
+            "y": 1568
+          },
+          {
+            "x": 1164,
+            "y": 1568
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "«6,2...",
+      "confidence": 0.17,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1212,
+            "y": 1544
+          },
+          {
+            "x": 1328,
+            "y": 1544
+          },
+          {
+            "x": 1328,
+            "y": 1568
+          },
+          {
+            "x": 1212,
+            "y": 1568
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "|_2%",
+      "confidence": 0.41,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1340,
+            "y": 1544
+          },
+          {
+            "x": 1384,
+            "y": 1544
+          },
+          {
+            "x": 1384,
+            "y": 1568
+          },
+          {
+            "x": 1340,
+            "y": 1568
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "o",
+      "confidence": 0.72,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1408,
+            "y": 1548
+          },
+          {
+            "x": 1425,
+            "y": 1548
+          },
+          {
+            "x": 1425,
+            "y": 1560
+          },
+          {
+            "x": 1408,
+            "y": 1560
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "2",
+      "confidence": 0.56,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1450,
+            "y": 1548
+          },
+          {
+            "x": 1466,
+            "y": 1548
+          },
+          {
+            "x": 1466,
+            "y": 1560
+          },
+          {
+            "x": 1450,
+            "y": 1560
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "ee",
+      "confidence": 0.39,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 284,
+            "y": 1574
+          },
+          {
+            "x": 429,
+            "y": 1574
+          },
+          {
+            "x": 429,
+            "y": 1602
+          },
+          {
+            "x": 284,
+            "y": 1602
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "—",
+      "confidence": 0.7,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 480,
+            "y": 1581
+          },
+          {
+            "x": 509,
+            "y": 1581
+          },
+          {
+            "x": 509,
+            "y": 1591
+          },
+          {
+            "x": 480,
+            "y": 1591
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "aa",
+      "confidence": 0.3,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 531,
+            "y": 1574
+          },
+          {
+            "x": 795,
+            "y": 1574
+          },
+          {
+            "x": 795,
+            "y": 1602
+          },
+          {
+            "x": 531,
+            "y": 1602
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "PY",
+      "confidence": 0.37,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1020,
+            "y": 1574
+          },
+          {
+            "x": 1120,
+            "y": 1574
+          },
+          {
+            "x": 1120,
+            "y": 1599
+          },
+          {
+            "x": 1020,
+            "y": 1599
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Ef",
+      "confidence": 0.37,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1179,
+            "y": 1555
+          },
+          {
+            "x": 1245,
+            "y": 1555
+          },
+          {
+            "x": 1245,
+            "y": 1611
+          },
+          {
+            "x": 1179,
+            "y": 1611
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "ef",
+      "confidence": 0.55,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1276,
+            "y": 1555
+          },
+          {
+            "x": 1329,
+            "y": 1555
+          },
+          {
+            "x": 1329,
+            "y": 1611
+          },
+          {
+            "x": 1276,
+            "y": 1611
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "eo",
+      "confidence": 0.24,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1361,
+            "y": 1555
+          },
+          {
+            "x": 1436,
+            "y": 1555
+          },
+          {
+            "x": 1436,
+            "y": 1611
+          },
+          {
+            "x": 1361,
+            "y": 1611
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "\"E",
+      "confidence": 0.95,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 272,
+            "y": 1617
+          },
+          {
+            "x": 301,
+            "y": 1617
+          },
+          {
+            "x": 301,
+            "y": 1637
+          },
+          {
+            "x": 272,
+            "y": 1637
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "eu",
+      "confidence": 0.92,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 321,
+            "y": 1623
+          },
+          {
+            "x": 348,
+            "y": 1623
+          },
+          {
+            "x": 348,
+            "y": 1637
+          },
+          {
+            "x": 321,
+            "y": 1637
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "en-che-rei___",
+      "confidence": 0.29,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 362,
+            "y": 1616
+          },
+          {
+            "x": 538,
+            "y": 1616
+          },
+          {
+            "x": 538,
+            "y": 1637
+          },
+          {
+            "x": 362,
+            "y": 1637
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "as",
+      "confidence": 0.8,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 559,
+            "y": 1623
+          },
+          {
+            "x": 582,
+            "y": 1623
+          },
+          {
+            "x": 582,
+            "y": 1637
+          },
+          {
+            "x": 559,
+            "y": 1637
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "-",
+      "confidence": 0.8,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 592,
+            "y": 1629
+          },
+          {
+            "x": 600,
+            "y": 1629
+          },
+          {
+            "x": 600,
+            "y": 1631
+          },
+          {
+            "x": 592,
+            "y": 1631
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "sim",
+      "confidence": 0.82,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 611,
+            "y": 1616
+          },
+          {
+            "x": 653,
+            "y": 1616
+          },
+          {
+            "x": 653,
+            "y": 1637
+          },
+          {
+            "x": 611,
+            "y": 1637
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "es",
+      "confidence": 0.5,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 665,
+            "y": 1623
+          },
+          {
+            "x": 688,
+            "y": 1623
+          },
+          {
+            "x": 688,
+            "y": 1637
+          },
+          {
+            "x": 665,
+            "y": 1637
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "-",
+      "confidence": 0.93,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 713,
+            "y": 1629
+          },
+          {
+            "x": 720,
+            "y": 1629
+          },
+          {
+            "x": 720,
+            "y": 1631
+          },
+          {
+            "x": 713,
+            "y": 1631
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "te",
+      "confidence": 0.93,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 746,
+            "y": 1619
+          },
+          {
+            "x": 766,
+            "y": 1619
+          },
+          {
+            "x": 766,
+            "y": 1637
+          },
+          {
+            "x": 746,
+            "y": 1637
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "lu-",
+      "confidence": 0.76,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 777,
+            "y": 1616
+          },
+          {
+            "x": 809,
+            "y": 1616
+          },
+          {
+            "x": 809,
+            "y": 1637
+          },
+          {
+            "x": 777,
+            "y": 1637
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "gar,",
+      "confidence": 0.76,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 816,
+            "y": 1623
+          },
+          {
+            "x": 858,
+            "y": 1623
+          },
+          {
+            "x": 858,
+            "y": 1644
+          },
+          {
+            "x": 816,
+            "y": 1644
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "com",
+      "confidence": 0.93,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1003,
+            "y": 1624
+          },
+          {
+            "x": 1054,
+            "y": 1624
+          },
+          {
+            "x": 1054,
+            "y": 1638
+          },
+          {
+            "x": 1003,
+            "y": 1638
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "mi-nha",
+      "confidence": 0.92,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1065,
+            "y": 1617
+          },
+          {
+            "x": 1150,
+            "y": 1617
+          },
+          {
+            "x": 1150,
+            "y": 1638
+          },
+          {
+            "x": 1065,
+            "y": 1638
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "gló-ria",
+      "confidence": 0.93,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1161,
+            "y": 1617
+          },
+          {
+            "x": 1242,
+            "y": 1617
+          },
+          {
+            "x": 1242,
+            "y": 1645
+          },
+          {
+            "x": 1161,
+            "y": 1645
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "en-che",
+      "confidence": 0.9,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1255,
+            "y": 1617
+          },
+          {
+            "x": 1334,
+            "y": 1617
+          },
+          {
+            "x": 1334,
+            "y": 1638
+          },
+          {
+            "x": 1255,
+            "y": 1638
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "-",
+      "confidence": 0.9,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1343,
+            "y": 1631
+          },
+          {
+            "x": 1351,
+            "y": 1631
+          },
+          {
+            "x": 1351,
+            "y": 1633
+          },
+          {
+            "x": 1343,
+            "y": 1633
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "rei",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1360,
+            "y": 1617
+          },
+          {
+            "x": 1390,
+            "y": 1617
+          },
+          {
+            "x": 1390,
+            "y": 1638
+          },
+          {
+            "x": 1360,
+            "y": 1638
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "es",
+      "confidence": 0.93,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1409,
+            "y": 1624
+          },
+          {
+            "x": 1432,
+            "y": 1624
+          },
+          {
+            "x": 1432,
+            "y": 1638
+          },
+          {
+            "x": 1409,
+            "y": 1638
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "-",
+      "confidence": 0.92,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1457,
+            "y": 1631
+          },
+          {
+            "x": 1464,
+            "y": 1631
+          },
+          {
+            "x": 1464,
+            "y": 1633
+          },
+          {
+            "x": 1457,
+            "y": 1633
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "te",
+      "confidence": 0.91,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1490,
+            "y": 1620
+          },
+          {
+            "x": 1509,
+            "y": 1620
+          },
+          {
+            "x": 1509,
+            "y": 1638
+          },
+          {
+            "x": 1490,
+            "y": 1638
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "lu-",
+      "confidence": 0.89,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1521,
+            "y": 1617
+          },
+          {
+            "x": 1552,
+            "y": 1617
+          },
+          {
+            "x": 1552,
+            "y": 1638
+          },
+          {
+            "x": 1521,
+            "y": 1638
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "gar,\"",
+      "confidence": 0.92,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1565,
+            "y": 1618
+          },
+          {
+            "x": 1619,
+            "y": 1618
+          },
+          {
+            "x": 1619,
+            "y": 1645
+          },
+          {
+            "x": 1565,
+            "y": 1645
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "(Eu",
+      "confidence": 0.92,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 730,
+            "y": 1711
+          },
+          {
+            "x": 773,
+            "y": 1711
+          },
+          {
+            "x": 773,
+            "y": 1737
+          },
+          {
+            "x": 730,
+            "y": 1737
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "en-che-tre)",
+      "confidence": 0.69,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 820,
+            "y": 1710
+          },
+          {
+            "x": 958,
+            "y": 1710
+          },
+          {
+            "x": 958,
+            "y": 1731
+          },
+          {
+            "x": 820,
+            "y": 1731
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "-",
+      "confidence": 0.64,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1538,
+            "y": 1722
+          },
+          {
+            "x": 1545,
+            "y": 1722
+          },
+          {
+            "x": 1545,
+            "y": 1724
+          },
+          {
+            "x": 1538,
+            "y": 1724
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "te",
+      "confidence": 0.92,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1573,
+            "y": 1711
+          },
+          {
+            "x": 1593,
+            "y": 1711
+          },
+          {
+            "x": 1593,
+            "y": 1729
+          },
+          {
+            "x": 1573,
+            "y": 1729
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "lu-",
+      "confidence": 0.9,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1630,
+            "y": 1708
+          },
+          {
+            "x": 1671,
+            "y": 1708
+          },
+          {
+            "x": 1671,
+            "y": 1729
+          },
+          {
+            "x": 1630,
+            "y": 1729
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "NS",
+      "confidence": 0.16,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 765,
+            "y": 1788
+          },
+          {
+            "x": 776,
+            "y": 1788
+          },
+          {
+            "x": 776,
+            "y": 1810
+          },
+          {
+            "x": 765,
+            "y": 1810
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "eee",
+      "confidence": 0.3,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 984,
+            "y": 1738
+          },
+          {
+            "x": 1454,
+            "y": 1738
+          },
+          {
+            "x": 1454,
+            "y": 1810
+          },
+          {
+            "x": 984,
+            "y": 1810
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "a",
+      "confidence": 0.55,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1388,
+            "y": 1734
+          },
+          {
+            "x": 1459,
+            "y": 1734
+          },
+          {
+            "x": 1459,
+            "y": 1827
+          },
+          {
+            "x": 1388,
+            "y": 1827
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "d",
+      "confidence": 0.79,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1627,
+            "y": 1756
+          },
+          {
+            "x": 1655,
+            "y": 1756
+          },
+          {
+            "x": 1655,
+            "y": 1799
+          },
+          {
+            "x": 1627,
+            "y": 1799
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "õe",
+      "confidence": 0.49,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 160,
+            "y": 1812
+          },
+          {
+            "x": 189,
+            "y": 1812
+          },
+          {
+            "x": 189,
+            "y": 1823
+          },
+          {
+            "x": 160,
+            "y": 1823
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "TF",
+      "confidence": 0.55,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1488,
+            "y": 1808
+          },
+          {
+            "x": 1522,
+            "y": 1808
+          },
+          {
+            "x": 1522,
+            "y": 1830
+          },
+          {
+            "x": 1488,
+            "y": 1830
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "i",
+      "confidence": 0.11,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1587,
+            "y": 1812
+          },
+          {
+            "x": 1687,
+            "y": 1812
+          },
+          {
+            "x": 1687,
+            "y": 1823
+          },
+          {
+            "x": 1587,
+            "y": 1823
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "|",
+      "confidence": 0.93,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1688,
+            "y": 1808
+          },
+          {
+            "x": 1691,
+            "y": 1808
+          },
+          {
+            "x": 1691,
+            "y": 1830
+          },
+          {
+            "x": 1688,
+            "y": 1830
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "XS",
+      "confidence": 0.19,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 619,
+            "y": 1825
+          },
+          {
+            "x": 695,
+            "y": 1825
+          },
+          {
+            "x": 695,
+            "y": 1836
+          },
+          {
+            "x": 619,
+            "y": 1836
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "a",
+      "confidence": 0.25,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 827,
+            "y": 1825
+          },
+          {
+            "x": 932,
+            "y": 1825
+          },
+          {
+            "x": 932,
+            "y": 1836
+          },
+          {
+            "x": 827,
+            "y": 1836
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "TEA",
+      "confidence": 0.38,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1645,
+            "y": 1825
+          },
+          {
+            "x": 1687,
+            "y": 1825
+          },
+          {
+            "x": 1687,
+            "y": 1836
+          },
+          {
+            "x": 1645,
+            "y": 1836
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "A",
+      "confidence": 0.47,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 160,
+            "y": 1838
+          },
+          {
+            "x": 204,
+            "y": 1838
+          },
+          {
+            "x": 204,
+            "y": 1849
+          },
+          {
+            "x": 160,
+            "y": 1849
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "=",
+      "confidence": 0.18,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 216,
+            "y": 1838
+          },
+          {
+            "x": 230,
+            "y": 1838
+          },
+          {
+            "x": 230,
+            "y": 1849
+          },
+          {
+            "x": 216,
+            "y": 1849
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "S(O",
+      "confidence": 0.23,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 244,
+            "y": 1838
+          },
+          {
+            "x": 1687,
+            "y": 1838
+          },
+          {
+            "x": 1687,
+            "y": 1849
+          },
+          {
+            "x": 244,
+            "y": 1849
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "CT",
+      "confidence": 0.47,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 156,
+            "y": 1847
+          },
+          {
+            "x": 186,
+            "y": 1847
+          },
+          {
+            "x": 186,
+            "y": 1869
+          },
+          {
+            "x": 156,
+            "y": 1869
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "VD",
+      "confidence": 0.32,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 209,
+            "y": 1851
+          },
+          {
+            "x": 251,
+            "y": 1851
+          },
+          {
+            "x": 251,
+            "y": 1862
+          },
+          {
+            "x": 209,
+            "y": 1862
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "IA",
+      "confidence": 0.16,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1564,
+            "y": 1847
+          },
+          {
+            "x": 1691,
+            "y": 1847
+          },
+          {
+            "x": 1691,
+            "y": 1869
+          },
+          {
+            "x": 1564,
+            "y": 1869
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "23",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 159,
+            "y": 1990
+          },
+          {
+            "x": 186,
+            "y": 1990
+          },
+          {
+            "x": 186,
+            "y": 2009
+          },
+          {
+            "x": 159,
+            "y": 2009
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Ab",
+      "confidence": 0.93,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 279,
+            "y": 1989
+          },
+          {
+            "x": 307,
+            "y": 1989
+          },
+          {
+            "x": 307,
+            "y": 2009
+          },
+          {
+            "x": 279,
+            "y": 2009
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "Fm",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 709,
+            "y": 1991
+          },
+          {
+            "x": 742,
+            "y": 1991
+          },
+          {
+            "x": 742,
+            "y": 2009
+          },
+          {
+            "x": 709,
+            "y": 2009
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "To",
+      "confidence": 0.86,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 891,
+            "y": 1980
+          },
+          {
+            "x": 926,
+            "y": 1980
+          },
+          {
+            "x": 926,
+            "y": 2003
+          },
+          {
+            "x": 891,
+            "y": 2003
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Coda",
+      "confidence": 0.76,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 938,
+            "y": 1980
+          },
+          {
+            "x": 1014,
+            "y": 1980
+          },
+          {
+            "x": 1014,
+            "y": 2004
+          },
+          {
+            "x": 938,
+            "y": 2004
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "qr",
+      "confidence": 0.5,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1074,
+            "y": 1989
+          },
+          {
+            "x": 1102,
+            "y": 1989
+          },
+          {
+            "x": 1102,
+            "y": 2009
+          },
+          {
+            "x": 1074,
+            "y": 2009
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "G",
+      "confidence": 0.92,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1419,
+            "y": 1990
+          },
+          {
+            "x": 1437,
+            "y": 1990
+          },
+          {
+            "x": 1437,
+            "y": 2009
+          },
+          {
+            "x": 1419,
+            "y": 2009
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "=",
+      "confidence": 0.35,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 432,
+            "y": 2046
+          },
+          {
+            "x": 445,
+            "y": 2046
+          },
+          {
+            "x": 445,
+            "y": 2054
+          },
+          {
+            "x": 432,
+            "y": 2054
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": ">",
+      "confidence": 0.48,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 620,
+            "y": 2039
+          },
+          {
+            "x": 666,
+            "y": 2039
+          },
+          {
+            "x": 666,
+            "y": 2054
+          },
+          {
+            "x": 620,
+            "y": 2054
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "TST",
+      "confidence": 0.2,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 697,
+            "y": 2043
+          },
+          {
+            "x": 897,
+            "y": 2043
+          },
+          {
+            "x": 897,
+            "y": 2054
+          },
+          {
+            "x": 697,
+            "y": 2054
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "ooo",
+      "confidence": 0.43,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1187,
+            "y": 2020
+          },
+          {
+            "x": 1687,
+            "y": 2020
+          },
+          {
+            "x": 1687,
+            "y": 2061
+          },
+          {
+            "x": 1187,
+            "y": 2061
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "NO",
+      "confidence": 0.28,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 185,
+            "y": 2056
+          },
+          {
+            "x": 206,
+            "y": 2056
+          },
+          {
+            "x": 206,
+            "y": 2067
+          },
+          {
+            "x": 185,
+            "y": 2067
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "VA",
+      "confidence": 0.43,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 220,
+            "y": 2052
+          },
+          {
+            "x": 237,
+            "y": 2052
+          },
+          {
+            "x": 237,
+            "y": 2074
+          },
+          {
+            "x": 220,
+            "y": 2074
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Ss",
+      "confidence": 0.31,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 343,
+            "y": 2056
+          },
+          {
+            "x": 542,
+            "y": 2056
+          },
+          {
+            "x": 542,
+            "y": 2067
+          },
+          {
+            "x": 343,
+            "y": 2067
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "a",
+      "confidence": 0.27,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 612,
+            "y": 2056
+          },
+          {
+            "x": 637,
+            "y": 2056
+          },
+          {
+            "x": 637,
+            "y": 2067
+          },
+          {
+            "x": 612,
+            "y": 2067
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "SS",
+      "confidence": 0.29,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 684,
+            "y": 2056
+          },
+          {
+            "x": 848,
+            "y": 2056
+          },
+          {
+            "x": 848,
+            "y": 2067
+          },
+          {
+            "x": 684,
+            "y": 2067
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "1",
+      "confidence": 0.4,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 960,
+            "y": 2056
+          },
+          {
+            "x": 1093,
+            "y": 2056
+          },
+          {
+            "x": 1093,
+            "y": 2067
+          },
+          {
+            "x": 960,
+            "y": 2067
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "DS",
+      "confidence": 0.31,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1116,
+            "y": 2056
+          },
+          {
+            "x": 1161,
+            "y": 2056
+          },
+          {
+            "x": 1161,
+            "y": 2067
+          },
+          {
+            "x": 1116,
+            "y": 2067
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Ss",
+      "confidence": 0.25,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1186,
+            "y": 2056
+          },
+          {
+            "x": 1308,
+            "y": 2056
+          },
+          {
+            "x": 1308,
+            "y": 2067
+          },
+          {
+            "x": 1186,
+            "y": 2067
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "E",
+      "confidence": 0.69,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 160,
+            "y": 2069
+          },
+          {
+            "x": 169,
+            "y": 2069
+          },
+          {
+            "x": 169,
+            "y": 2080
+          },
+          {
+            "x": 160,
+            "y": 2080
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "Tau",
+      "confidence": 0.22,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 176,
+            "y": 2069
+          },
+          {
+            "x": 199,
+            "y": 2069
+          },
+          {
+            "x": 199,
+            "y": 2080
+          },
+          {
+            "x": 176,
+            "y": 2080
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "A",
+      "confidence": 0.51,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 212,
+            "y": 2069
+          },
+          {
+            "x": 233,
+            "y": 2069
+          },
+          {
+            "x": 233,
+            "y": 2080
+          },
+          {
+            "x": 212,
+            "y": 2080
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "O",
+      "confidence": 0.52,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 244,
+            "y": 2069
+          },
+          {
+            "x": 250,
+            "y": 2069
+          },
+          {
+            "x": 250,
+            "y": 2080
+          },
+          {
+            "x": 244,
+            "y": 2080
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "SR",
+      "confidence": 0.19,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 293,
+            "y": 2069
+          },
+          {
+            "x": 376,
+            "y": 2069
+          },
+          {
+            "x": 376,
+            "y": 2080
+          },
+          {
+            "x": 293,
+            "y": 2080
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "SS",
+      "confidence": 0.2,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 445,
+            "y": 2069
+          },
+          {
+            "x": 589,
+            "y": 2069
+          },
+          {
+            "x": 589,
+            "y": 2080
+          },
+          {
+            "x": 445,
+            "y": 2080
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "O",
+      "confidence": 0.11,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 612,
+            "y": 2069
+          },
+          {
+            "x": 639,
+            "y": 2069
+          },
+          {
+            "x": 639,
+            "y": 2080
+          },
+          {
+            "x": 612,
+            "y": 2080
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "CS",
+      "confidence": 0.2,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 717,
+            "y": 2069
+          },
+          {
+            "x": 848,
+            "y": 2069
+          },
+          {
+            "x": 848,
+            "y": 2080
+          },
+          {
+            "x": 717,
+            "y": 2080
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "OO",
+      "confidence": 0.16,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 937,
+            "y": 2069
+          },
+          {
+            "x": 1044,
+            "y": 2069
+          },
+          {
+            "x": 1044,
+            "y": 2080
+          },
+          {
+            "x": 937,
+            "y": 2080
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "A",
+      "confidence": 0.4,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1059,
+            "y": 2069
+          },
+          {
+            "x": 1088,
+            "y": 2069
+          },
+          {
+            "x": 1088,
+            "y": 2080
+          },
+          {
+            "x": 1059,
+            "y": 2080
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "OS",
+      "confidence": 0.23,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1116,
+            "y": 2065
+          },
+          {
+            "x": 1161,
+            "y": 2065
+          },
+          {
+            "x": 1161,
+            "y": 2087
+          },
+          {
+            "x": 1116,
+            "y": 2087
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "SS",
+      "confidence": 0.21,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1186,
+            "y": 2069
+          },
+          {
+            "x": 1258,
+            "y": 2069
+          },
+          {
+            "x": 1258,
+            "y": 2080
+          },
+          {
+            "x": 1186,
+            "y": 2080
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "SS",
+      "confidence": 0.32,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1307,
+            "y": 2069
+          },
+          {
+            "x": 1403,
+            "y": 2069
+          },
+          {
+            "x": 1403,
+            "y": 2080
+          },
+          {
+            "x": 1307,
+            "y": 2080
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "a",
+      "confidence": 0.19,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 398,
+            "y": 2078
+          },
+          {
+            "x": 419,
+            "y": 2078
+          },
+          {
+            "x": 419,
+            "y": 2100
+          },
+          {
+            "x": 398,
+            "y": 2100
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "ee",
+      "confidence": 0.23,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 522,
+            "y": 2082
+          },
+          {
+            "x": 576,
+            "y": 2082
+          },
+          {
+            "x": 576,
+            "y": 2093
+          },
+          {
+            "x": 522,
+            "y": 2093
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "ee",
+      "confidence": 0.23,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 597,
+            "y": 2078
+          },
+          {
+            "x": 626,
+            "y": 2078
+          },
+          {
+            "x": 626,
+            "y": 2100
+          },
+          {
+            "x": 597,
+            "y": 2100
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "ee",
+      "confidence": 0.27,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 647,
+            "y": 2082
+          },
+          {
+            "x": 694,
+            "y": 2082
+          },
+          {
+            "x": 694,
+            "y": 2093
+          },
+          {
+            "x": 647,
+            "y": 2093
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "|",
+      "confidence": 0.16,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1025,
+            "y": 2078
+          },
+          {
+            "x": 1066,
+            "y": 2078
+          },
+          {
+            "x": 1066,
+            "y": 2100
+          },
+          {
+            "x": 1025,
+            "y": 2100
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "ses\")",
+      "confidence": 0.14,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1159,
+            "y": 2078
+          },
+          {
+            "x": 1555,
+            "y": 2078
+          },
+          {
+            "x": 1555,
+            "y": 2110
+          },
+          {
+            "x": 1159,
+            "y": 2110
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "À",
+      "confidence": 0.73,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1675,
+            "y": 2082
+          },
+          {
+            "x": 1687,
+            "y": 2082
+          },
+          {
+            "x": 1687,
+            "y": 2093
+          },
+          {
+            "x": 1675,
+            "y": 2093
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "PET",
+      "confidence": 0.13,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 333,
+            "y": 2095
+          },
+          {
+            "x": 428,
+            "y": 2095
+          },
+          {
+            "x": 428,
+            "y": 2123
+          },
+          {
+            "x": 333,
+            "y": 2123
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Oa",
+      "confidence": 0.4,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 478,
+            "y": 2095
+          },
+          {
+            "x": 666,
+            "y": 2095
+          },
+          {
+            "x": 666,
+            "y": 2130
+          },
+          {
+            "x": 478,
+            "y": 2130
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "ete",
+      "confidence": 0.37,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 711,
+            "y": 2100
+          },
+          {
+            "x": 903,
+            "y": 2100
+          },
+          {
+            "x": 903,
+            "y": 2143
+          },
+          {
+            "x": 711,
+            "y": 2143
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "PETS",
+      "confidence": 0.27,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1098,
+            "y": 2095
+          },
+          {
+            "x": 1424,
+            "y": 2095
+          },
+          {
+            "x": 1424,
+            "y": 2130
+          },
+          {
+            "x": 1098,
+            "y": 2130
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "diz",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 323,
+            "y": 2151
+          },
+          {
+            "x": 358,
+            "y": 2151
+          },
+          {
+            "x": 358,
+            "y": 2172
+          },
+          {
+            "x": 323,
+            "y": 2172
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "o",
+      "confidence": 0.93,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 383,
+            "y": 2158
+          },
+          {
+            "x": 396,
+            "y": 2158
+          },
+          {
+            "x": 396,
+            "y": 2172
+          },
+          {
+            "x": 383,
+            "y": 2172
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Se-nhor",
+      "confidence": 0.81,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 425,
+            "y": 2151
+          },
+          {
+            "x": 592,
+            "y": 2151
+          },
+          {
+            "x": 592,
+            "y": 2173
+          },
+          {
+            "x": 425,
+            "y": 2173
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "—",
+      "confidence": 0.32,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 559,
+            "y": 2145
+          },
+          {
+            "x": 574,
+            "y": 2145
+          },
+          {
+            "x": 574,
+            "y": 2181
+          },
+          {
+            "x": 559,
+            "y": 2181
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "dose",
+      "confidence": 0.92,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 611,
+            "y": 2151
+          },
+          {
+            "x": 674,
+            "y": 2151
+          },
+          {
+            "x": 674,
+            "y": 2172
+          },
+          {
+            "x": 611,
+            "y": 2172
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "-xér",
+      "confidence": 0.17,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 692,
+            "y": 2150
+          },
+          {
+            "x": 755,
+            "y": 2150
+          },
+          {
+            "x": 755,
+            "y": 2170
+          },
+          {
+            "x": 692,
+            "y": 2170
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "-",
+      "confidence": 0.89,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 788,
+            "y": 2163
+          },
+          {
+            "x": 796,
+            "y": 2163
+          },
+          {
+            "x": 796,
+            "y": 2165
+          },
+          {
+            "x": 788,
+            "y": 2165
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "ci-tos,",
+      "confidence": 0.91,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 831,
+            "y": 2149
+          },
+          {
+            "x": 912,
+            "y": 2149
+          },
+          {
+            "x": 912,
+            "y": 2174
+          },
+          {
+            "x": 831,
+            "y": 2174
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "diz",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1089,
+            "y": 2149
+          },
+          {
+            "x": 1124,
+            "y": 2149
+          },
+          {
+            "x": 1124,
+            "y": 2170
+          },
+          {
+            "x": 1089,
+            "y": 2170
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "o",
+      "confidence": 0.92,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1148,
+            "y": 2156
+          },
+          {
+            "x": 1161,
+            "y": 2156
+          },
+          {
+            "x": 1161,
+            "y": 2170
+          },
+          {
+            "x": 1148,
+            "y": 2170
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Se-nhor",
+      "confidence": 0.5,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1190,
+            "y": 2149
+          },
+          {
+            "x": 1444,
+            "y": 2149
+          },
+          {
+            "x": 1444,
+            "y": 2171
+          },
+          {
+            "x": 1190,
+            "y": 2171
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "gar),",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 274,
+            "y": 2246
+          },
+          {
+            "x": 327,
+            "y": 2246
+          },
+          {
+            "x": 327,
+            "y": 2286
+          },
+          {
+            "x": 274,
+            "y": 2286
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "diz",
+      "confidence": 0.93,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 823,
+            "y": 2255
+          },
+          {
+            "x": 859,
+            "y": 2255
+          },
+          {
+            "x": 859,
+            "y": 2276
+          },
+          {
+            "x": 823,
+            "y": 2276
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "o",
+      "confidence": 0.94,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 883,
+            "y": 2262
+          },
+          {
+            "x": 896,
+            "y": 2262
+          },
+          {
+            "x": 896,
+            "y": 2276
+          },
+          {
+            "x": 883,
+            "y": 2276
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Se",
+      "confidence": 0.9,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 943,
+            "y": 2256
+          },
+          {
+            "x": 971,
+            "y": 2256
+          },
+          {
+            "x": 971,
+            "y": 2276
+          },
+          {
+            "x": 943,
+            "y": 2276
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "-",
+      "confidence": 0.88,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1007,
+            "y": 2268
+          },
+          {
+            "x": 1014,
+            "y": 2268
+          },
+          {
+            "x": 1014,
+            "y": 2270
+          },
+          {
+            "x": 1007,
+            "y": 2270
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "nhor\"",
+      "confidence": 0.53,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1050,
+            "y": 2255
+          },
+          {
+            "x": 1120,
+            "y": 2255
+          },
+          {
+            "x": 1120,
+            "y": 2276
+          },
+          {
+            "x": 1050,
+            "y": 2276
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "=",
+      "confidence": 0.88,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 289,
+            "y": 2313
+          },
+          {
+            "x": 301,
+            "y": 2313
+          },
+          {
+            "x": 301,
+            "y": 2331
+          },
+          {
+            "x": 289,
+            "y": 2331
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "n",
+      "confidence": 0.24,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 850,
+            "y": 2319
+          },
+          {
+            "x": 861,
+            "y": 2319
+          },
+          {
+            "x": 861,
+            "y": 2331
+          },
+          {
+            "x": 850,
+            "y": 2331
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "sre",
+      "confidence": 0.57,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1037,
+            "y": 2319
+          },
+          {
+            "x": 1067,
+            "y": 2319
+          },
+          {
+            "x": 1067,
+            "y": 2331
+          },
+          {
+            "x": 1037,
+            "y": 2331
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Po,",
+      "confidence": 0.21,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1427,
+            "y": 2320
+          },
+          {
+            "x": 1443,
+            "y": 2320
+          },
+          {
+            "x": 1443,
+            "y": 2330
+          },
+          {
+            "x": 1427,
+            "y": 2330
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "OL",
+      "confidence": 0.4,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 160,
+            "y": 2332
+          },
+          {
+            "x": 228,
+            "y": 2332
+          },
+          {
+            "x": 228,
+            "y": 2344
+          },
+          {
+            "x": 160,
+            "y": 2344
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "AT",
+      "confidence": 0.62,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 508,
+            "y": 2345
+          },
+          {
+            "x": 786,
+            "y": 2345
+          },
+          {
+            "x": 786,
+            "y": 2357
+          },
+          {
+            "x": 508,
+            "y": 2357
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "[ZT",
+      "confidence": 0.47,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 160,
+            "y": 2358
+          },
+          {
+            "x": 1687,
+            "y": 2358
+          },
+          {
+            "x": 1687,
+            "y": 2370
+          },
+          {
+            "x": 160,
+            "y": 2370
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "Ee",
+      "confidence": 0.41,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 990,
+            "y": 2354
+          },
+          {
+            "x": 1092,
+            "y": 2354
+          },
+          {
+            "x": 1092,
+            "y": 2378
+          },
+          {
+            "x": 990,
+            "y": 2378
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "—",
+      "confidence": 0.5,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1112,
+            "y": 2354
+          },
+          {
+            "x": 1174,
+            "y": 2354
+          },
+          {
+            "x": 1174,
+            "y": 2378
+          },
+          {
+            "x": 1112,
+            "y": 2378
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "|",
+      "confidence": 0.55,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1292,
+            "y": 2354
+          },
+          {
+            "x": 1408,
+            "y": 2354
+          },
+          {
+            "x": 1408,
+            "y": 2378
+          },
+          {
+            "x": 1292,
+            "y": 2378
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "A",
+      "confidence": 0.46,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 160,
+            "y": 2371
+          },
+          {
+            "x": 234,
+            "y": 2371
+          },
+          {
+            "x": 234,
+            "y": 2383
+          },
+          {
+            "x": 160,
+            "y": 2383
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": true,
+      "classification": "possible_chord"
+    },
+    {
+      "text": "9",
+      "confidence": 0.43,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 246,
+            "y": 2371
+          },
+          {
+            "x": 251,
+            "y": 2371
+          },
+          {
+            "x": 251,
+            "y": 2383
+          },
+          {
+            "x": 246,
+            "y": 2383
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "AA",
+      "confidence": 0.47,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 838,
+            "y": 2367
+          },
+          {
+            "x": 880,
+            "y": 2367
+          },
+          {
+            "x": 880,
+            "y": 2391
+          },
+          {
+            "x": 838,
+            "y": 2391
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "6",
+      "confidence": 0.32,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 988,
+            "y": 2371
+          },
+          {
+            "x": 1028,
+            "y": 2371
+          },
+          {
+            "x": 1028,
+            "y": 2383
+          },
+          {
+            "x": 988,
+            "y": 2383
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "SS",
+      "confidence": 0.16,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 1408,
+            "y": 2371
+          },
+          {
+            "x": 1424,
+            "y": 2371
+          },
+          {
+            "x": 1424,
+            "y": 2383
+          },
+          {
+            "x": 1408,
+            "y": 2383
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "AWA",
+      "confidence": 0.68,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 731,
+            "y": 2497
+          },
+          {
+            "x": 1001,
+            "y": 2497
+          },
+          {
+            "x": 1001,
+            "y": 2554
+          },
+          {
+            "x": 731,
+            "y": 2554
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "DEPARTAMENTO",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 728,
+            "y": 2555
+          },
+          {
+            "x": 886,
+            "y": 2555
+          },
+          {
+            "x": 886,
+            "y": 2567
+          },
+          {
+            "x": 728,
+            "y": 2567
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "DE",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 893,
+            "y": 2555
+          },
+          {
+            "x": 918,
+            "y": 2555
+          },
+          {
+            "x": 918,
+            "y": 2567
+          },
+          {
+            "x": 893,
+            "y": 2567
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    },
+    {
+      "text": "LOUVOR",
+      "confidence": 0.96,
+      "bbox": {
+        "vertices": [
+          {
+            "x": 926,
+            "y": 2555
+          },
+          {
+            "x": 1008,
+            "y": 2555
+          },
+          {
+            "x": 1008,
+            "y": 2567
+          },
+          {
+            "x": 926,
+            "y": 2567
+          }
+        ]
+      },
+      "page": 1,
+      "source": "ocr",
+      "ocr_engine": "tesseract",
+      "chord_candidate": false,
+      "classification": "ocr_text"
+    }
+  ]
+}
