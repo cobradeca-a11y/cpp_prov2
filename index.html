@@ -91,26 +91,6 @@
       </div>
     </section>
 
-    <section class="panel active">
-      <h2>3. Saída</h2>
-      <div class="toolbar sticky">
-        <button id="btnGenerateOutputs" class="primary">Gerar saídas</button>
-        <button id="btnExportJson">Exportar JSON</button>
-        <button id="btnExportTech">Exportar cifra técnica</button>
-        <button id="btnExportPlayable">Exportar cifra tocável</button>
-        <button id="btnExportUncertainty">Exportar incertezas</button>
-        <button id="btnExportDetection">Exportar detecção</button>
-        <button id="btnExportMultipageAudit">Exportar multipágina auditável</button>
-        <button id="btnExportAll" class="ok">Exportar pacote</button>
-      </div>
-      <div class="grid2">
-        <div class="card"><h3>Cifra técnica</h3><pre id="technicalOutput" class="output"></pre></div>
-        <div class="card"><h3>Cifra tocável</h3><pre id="playableOutput" class="output"></pre></div>
-        <div class="card"><h3>Relatório de incertezas</h3><pre id="uncertaintyOutput" class="output"></pre></div>
-        <div class="card"><h3>Relatório de detecção</h3><pre id="detectionOutput" class="output"></pre></div>
-      </div>
-    </section>
-
     <section class="panel active" id="batchReviewPanel">
       <h2>2C. Revisão em lote — OCR → Compasso</h2>
       <p class="hint">Associação manual rápida: confirme cada bloco OCR detectado a um compasso de uma vez, sem navegar bloco a bloco. Nada é associado automaticamente. Contrato CPP preservado.</p>
@@ -138,6 +118,26 @@
         <div id="batchCardGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:0.6rem;max-height:60vh;overflow-y:auto;padding:0.25rem;"></div>
       </div>
       <pre id="batchOutput" class="report small-report">Nenhuma ação em lote aplicada.</pre>
+    </section>
+
+    <section class="panel active">
+      <h2>3. Saída</h2>
+      <div class="toolbar sticky">
+        <button id="btnGenerateOutputs" class="primary">Gerar saídas</button>
+        <button id="btnExportJson">Exportar JSON</button>
+        <button id="btnExportTech">Exportar cifra técnica</button>
+        <button id="btnExportPlayable">Exportar cifra tocável</button>
+        <button id="btnExportUncertainty">Exportar incertezas</button>
+        <button id="btnExportDetection">Exportar detecção</button>
+        <button id="btnExportMultipageAudit">Exportar multipágina auditável</button>
+        <button id="btnExportAll" class="ok">Exportar pacote</button>
+      </div>
+      <div class="grid2">
+        <div class="card"><h3>Cifra técnica</h3><pre id="technicalOutput" class="output"></pre></div>
+        <div class="card"><h3>Cifra tocável</h3><pre id="playableOutput" class="output"></pre></div>
+        <div class="card"><h3>Relatório de incertezas</h3><pre id="uncertaintyOutput" class="output"></pre></div>
+        <div class="card"><h3>Relatório de detecção</h3><pre id="detectionOutput" class="output"></pre></div>
+      </div>
     </section>
 
     <section class="panel active">

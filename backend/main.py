@@ -40,6 +40,17 @@ app.add_middleware(
 @app.get("/health")
 def health() -> dict[str, Any]:
     ocr_engine = os.getenv("OCR_ENGINE", "").strip() or "nao_configurado"
+    tesseract_cmd = os.getenv("TESSERACT_CMD", "").strip() or "tesseract (PATH do sistema)"
+    tesseract_ok = None
+    if ocr_engine == "tesseract":
+        try:
+            import pytesseract
+            if os.getenv("TESSERACT_CMD", "").strip():
+                pytesseract.pytesseract.tesseract_cmd = os.getenv("TESSERACT_CMD").strip().strip('"')
+            pytesseract.get_tesseract_version()
+            tesseract_ok = True
+        except Exception:
+            tesseract_ok = False
     return {
         "ok": True,
         "app": APP_NAME,
@@ -48,6 +59,8 @@ def health() -> dict[str, Any]:
         "audiveris_available": audiveris_available(),
         "ocr_engine": ocr_engine,
         "ocr_engine_active": ocr_engine in ("tesseract", "google_vision"),
+        "tesseract_cmd": tesseract_cmd,
+        "tesseract_available": tesseract_ok,
         "ocr_note": "tesseract=local sem credenciais | google_vision=requer GOOGLE_APPLICATION_CREDENTIALS",
     }
 

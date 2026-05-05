@@ -25,6 +25,27 @@ _CHORD_RE = re.compile(
     r"^[A-G](?:#|b)?(?:m|maj|min|dim|aug|sus|add)?\d*(?:\([^)]*\))?(?:/[A-G](?:#|b)?)?$"
 )
 
+# Suporte a TESSERACT_CMD no .env para Windows (sem precisar alterar PATH do sistema)
+# Exemplo: TESSERACT_CMD=C:\Program Files\Tesseract-OCR\tesseract.exe
+def _configure_tesseract_cmd() -> None:
+    cmd = os.environ.get("TESSERACT_CMD", "").strip().strip('"')
+    if cmd:
+        try:
+            import pytesseract
+            pytesseract.pytesseract.tesseract_cmd = cmd
+        except ImportError:
+            pass
+
+_configure_tesseract_cmd()
+
+_TESSERACT_NOT_FOUND_MSG = (
+    "Tesseract não encontrado. "
+    "Instale em https://github.com/UB-Mannheim/tesseract/wiki (Windows) "
+    "ou `apt install tesseract-ocr tesseract-ocr-por` (Linux). "
+    "Após instalar, defina TESSERACT_CMD no .env apontando para o executável, "
+    "ex: TESSERACT_CMD=C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+)
+
 
 def run_tesseract_image_ocr(source_path: Path) -> dict[str, Any]:
     from ocr_cache import cache_key_for_image, cached_text_blocks, write_ocr_cache
@@ -50,8 +71,12 @@ def run_tesseract_image_ocr(source_path: Path) -> dict[str, Any]:
         c["warnings"].append("pytesseract não instalado. Execute: pip install pytesseract")
         return finalize_ocr_multipage_metadata(c)
     except Exception as exc:
+        msg = str(exc)
         c = create_empty_ocr_contract(status="failed", engine=TESSERACT_ENGINE)
-        c["warnings"].append(f"Falha no OCR local: {exc}")
+        if "not installed" in msg or "not in your PATH" in msg or "TesseractNotFound" in msg:
+            c["warnings"].append(_TESSERACT_NOT_FOUND_MSG)
+        else:
+            c["warnings"].append(f"Falha no OCR local: {exc}")
         return finalize_ocr_multipage_metadata(c)
 
     write_ocr_cache(cache_key, text_blocks, {"engine": TESSERACT_ENGINE, "page": 1})
@@ -105,7 +130,11 @@ def run_tesseract_pdf_ocr(source_path: Path) -> dict[str, Any]:
                     write_ocr_cache(ck, page_blocks, {"engine": TESSERACT_ENGINE, "page": page_number})
                     all_blocks.extend(page_blocks)
                 except Exception as exc:
-                    warnings.append(f"Falha no OCR local da página {page_number}: {exc}")
+                    msg = str(exc)
+                    if "not installed" in msg or "not in your PATH" in msg or "TesseractNotFound" in msg:
+                        warnings.append(f"Página {page_number}: {_TESSERACT_NOT_FOUND_MSG}")
+                    else:
+                        warnings.append(f"Falha no OCR local da página {page_number}: {exc}")
 
     except ImportError as exc:
         c = create_empty_ocr_contract(status="unavailable", engine=TESSERACT_ENGINE)
