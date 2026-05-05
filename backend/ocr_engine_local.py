@@ -13,6 +13,7 @@ Contrato CPP preservado:
 """
 from __future__ import annotations
 
+import os
 import re
 import tempfile
 from pathlib import Path
