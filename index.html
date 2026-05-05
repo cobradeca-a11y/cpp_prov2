@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+  <meta name="theme-color" content="#111827" />
+  <title>cpp_pro — Conversor Profissional de Partituras</title>
+  <link rel="manifest" href="./manifest.json?v=audit-66-local-ocr" />
+  <link rel="stylesheet" href="./src/styles.css?v=audit-66-local-ocr" />
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <h1>cpp_pro</h1>
+      <p>Conversor Profissional de Partituras — OMR, MusicXML, Revisão e Cifra Tocável</p>
+      <p id="frontendBuild" class="build-info">Frontend build: audit-66-local-ocr</p>
+    </div>
+  </header>
+
+  <main class="professional-main">
+    <section class="panel active">
+      <h2>1. Processamento profissional</h2>
+      <p class="hint">Fluxo principal: PDF/imagem → OMR profissional → MusicXML → CPP JSON → revisão → cifra.</p>
+      <div class="card">
+        <label>Backend OMR
+          <input id="backendUrl" value="http://localhost:8787" placeholder="http://localhost:8787" />
+        </label>
+        <div class="toolbar">
+          <button id="btnCheckBackend" class="ghost">Verificar backend</button>
+          <button id="btnClearFrontendCache" class="ghost">Limpar cache do app</button>
+        </div>
+        <pre id="backendStatus" class="report small-report">Backend ainda não verificado.</pre>
+      </div>
+      <div class="card">
+        <input id="fileInput" type="file" accept=".pdf,.musicxml,.xml,.mxl,image/png,image/jpeg,image/webp" />
+        <div id="fileInfo" class="info"></div>
+        <div class="grid2">
+          <label>Título <input id="musicTitle" placeholder="Título da música" /></label>
+          <label>Tom <input id="musicKey" placeholder="Ex.: D, G, C" /></label>
+          <label>Compasso padrão <input id="meterDefault" placeholder="Ex.: 3/4" /></label>
+          <label>Andamento <input id="tempo" placeholder="Ex.: ♩ = 75-85" /></label>
+        </div>
+        <button id="btnProfessionalOmr" class="primary full">Processar com OMR Profissional</button>
+      </div>
+      <div class="card">
+        <h3>Status do processamento</h3>
+        <pre id="processingStatus" class="report">Aguardando arquivo.</pre>
+      </div>
+    </section>
+
+    <section class="panel active">
+      <h2>2. Revisão de compassos</h2>
+      <p class="hint">A revisão parte do JSON gerado pelo OMR/MusicXML. Correções manuais servem apenas para ajustar o resultado estrutural.</p>
+      <div class="toolbar sticky">
+        <button id="btnPrevMeasure">Compasso anterior</button>
+        <button id="btnAcceptMeasure" class="ok">Aceitar leitura</button>
+        <button id="btnMarkUncertain" class="warn">Marcar incerto</button>
+        <button id="btnNextMeasure">Próximo compasso</button>
+      </div>
+      <div class="layout">
+        <div class="card"><h3>Compasso atual</h3><pre id="measureFeedback" class="report">Nenhum compasso carregado.</pre></div>
+        <aside class="side"><h3>Compassos importados</h3><div id="measuresList" class="list"></div></aside>
+      </div>
+    </section>
+
+    <section class="panel active">
+      <h2>2A. Revisão OCR por bloco</h2>
+      <p class="hint">Auditoria 38: decisões humanas auditáveis sobre classificação OCR, OCR→sistema e OCR→compasso. Nada é alinhado automaticamente.</p>
+      <div class="toolbar sticky">
+        <button id="btnPrevOcrBlock">Bloco OCR anterior</button>
+        <button id="btnApproveOcrClassification" class="ok">Aprovar classificação OCR</button>
+        <button id="btnRejectOcrClassification" class="warn">Rejeitar classificação OCR</button>
+        <button id="btnConfirmOcrSystemState" class="ok">Confirmar estado OCR→sistema</button>
+        <button id="btnRejectOcrSystemState" class="warn">Rejeitar estado OCR→sistema</button>
+        <button id="btnConfirmOcrMeasureState" class="ok">Confirmar estado OCR→compasso</button>
+        <button id="btnRejectOcrMeasureState" class="warn">Rejeitar estado OCR→compasso</button>
+        <button id="btnNextOcrBlock">Próximo bloco OCR</button>
+      </div>
+      <div class="layout">
+        <div class="card"><h3>Bloco OCR atual</h3><div id="ocrBlockDetails" class="ocr-details">Nenhum bloco OCR carregado.</div></div>
+        <aside class="side"><h3>Blocos OCR</h3><div id="ocrBlocksList" class="list"></div></aside>
+      </div>
+    </section>
+
+    <section class="panel active">
+      <h2>2B. Histórico de decisões humanas</h2>
+      <p class="hint">Auditoria 39: leitura auditável de protocol.review[]. Esta tela não edita decisões anteriores e não altera evidências musicais.</p>
+      <div class="layout">
+        <div class="card"><h3>Decisão selecionada</h3><div id="reviewHistoryDetails" class="ocr-details">Nenhuma decisão humana registrada.</div></div>
+        <aside class="side"><h3>Histórico</h3><div id="reviewHistoryList" class="list"></div></aside>
+      </div>
+    </section>
+
+    <section class="panel active">
+      <h2>3. Saída</h2>
+      <div class="toolbar sticky">
+        <button id="btnGenerateOutputs" class="primary">Gerar saídas</button>
+        <button id="btnExportJson">Exportar JSON</button>
+        <button id="btnExportTech">Exportar cifra técnica</button>
+        <button id="btnExportPlayable">Exportar cifra tocável</button>
+        <button id="btnExportUncertainty">Exportar incertezas</button>
+        <button id="btnExportDetection">Exportar detecção</button>
+        <button id="btnExportMultipageAudit">Exportar multipágina auditável</button>
+        <button id="btnExportAll" class="ok">Exportar pacote</button>
+      </div>
+      <div class="grid2">
+        <div class="card"><h3>Cifra técnica</h3><pre id="technicalOutput" class="output"></pre></div>
+        <div class="card"><h3>Cifra tocável</h3><pre id="playableOutput" class="output"></pre></div>
+        <div class="card"><h3>Relatório de incertezas</h3><pre id="uncertaintyOutput" class="output"></pre></div>
+        <div class="card"><h3>Relatório de detecção</h3><pre id="detectionOutput" class="output"></pre></div>
+      </div>
+    </section>
+
+    <section class="panel active" id="batchReviewPanel">
+      <h2>2C. Revisão em lote — OCR → Compasso</h2>
+      <p class="hint">Associação manual rápida: confirme cada bloco OCR detectado a um compasso de uma vez, sem navegar bloco a bloco. Nada é associado automaticamente. Contrato CPP preservado.</p>
+      <div class="toolbar sticky">
+        <button id="btnBatchRefresh" class="ghost">Atualizar lista</button>
+        <button id="btnBatchExport" class="primary">Exportar revisão em lote JSON</button>
+        <span id="batchCounter" style="margin-left:auto;font-size:0.85em;opacity:0.7;"></span>
+      </div>
+      <div class="card">
+        <div class="grid2" style="margin-bottom:0.75rem;">
+          <label>Filtrar tipo
+            <select id="batchFilterKind">
+              <option value="all">Todos os candidatos</option>
+              <option value="chord">Somente cifras candidatas</option>
+              <option value="lyric">Somente letra candidata</option>
+              <option value="pending">Somente pendentes</option>
+            </select>
+          </label>
+          <label>Compasso padrão para lote
+            <select id="batchDefaultMeasure">
+              <option value="">— selecione —</option>
+            </select>
+          </label>
+        </div>
+        <div id="batchCardGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:0.6rem;max-height:60vh;overflow-y:auto;padding:0.25rem;"></div>
+      </div>
+      <pre id="batchOutput" class="report small-report">Nenhuma ação em lote aplicada.</pre>
+    </section>
+
+    <section class="panel active">
+      <h2>3A. Erros operacionais</h2>
+      <p class="hint">Auditoria 50: log técnico de erros de frontend/backend/exportação. Este painel não altera o protocolo musical.</p>
+      <div class="toolbar sticky">
+        <button id="btnExportErrorLog">Exportar log de erros</button>
+        <button id="btnClearErrorLog" class="ghost">Limpar log visual</button>
+      </div>
+      <pre id="frontendErrorLog" class="report small-report">Nenhum erro operacional registrado nesta sessão.</pre>
+    </section>
+  </main>
+
+  <div id="toast" class="toast hidden"></div>
+  <script type="module" src="./src/app-audit50.js?v=audit-66-local-ocr"></script>
+  <script type="module" src="./src/modules/audit50-ocr-warning-panel.js?v=audit-66-local-ocr"></script>
+  <script type="module" src="./src/modules/audit51-processing-state.js?v=audit-66-local-ocr"></script>
+  <script type="module" src="./src/modules/audit52-safe-cancel.js?v=audit-66-local-ocr"></script>
+  <script type="module" src="./src/modules/audit53-technical-logs.js?v=audit-66-local-ocr"></script>
+  <script type="module" src="./src/modules/audit54-full-diagnostics.js?v=audit-66-local-ocr"></script>
+  <script type="module" src="./src/modules/audit55-ai-structural-validator.js?v=audit-66-local-ocr"></script>
+  <script type="module" src="./src/modules/audit56-ai-suggestions.js?v=audit-66-local-ocr"></script>
+  <script type="module" src="./src/modules/audit56-cross-file-validation-patch.js?v=audit-66-local-ocr"></script>
+  <script type="module" src="./src/modules/audit57-omr-ocr-review-comparison.js?v=audit-66-local-ocr"></script>
+  <script type="module" src="./src/modules/audit57-clear-saved-state-patch.js?v=audit-66-local-ocr"></script>
+  <script type="module" src="./src/modules/audit58-measure-confidence-score.js?v=audit-66-local-ocr"></script>
+  <script type="module" src="./src/modules/audit58-1-review-readiness-gate.js?v=audit-66-local-ocr"></script>
+  <script type="module" src="./src/modules/audit58-2-explicit-measure-geometry.js?v=audit-66-local-ocr"></script>
+  <script type="module" src="./src/modules/audit58-3-measure-bbox-derivation.js?v=audit-66-local-ocr"></script>
+  <script type="module" src="./src/modules/audit58-4-manual-barline-adjustment.js?v=audit-66-local-ocr"></script>
+  <script type="module" src="./src/modules/audit58-5-measure-evidence-review.js?v=audit-66-local-ocr"></script>
+  <script type="module" src="./src/modules/audit59-playable-release.js?v=audit-66-local-ocr"></script>
+  <script type="module" src="./src/modules/audit60-final-export-package.js?v=audit-66-local-ocr"></script>
+  <script type="module" src="./src/modules/audit65-assisted-musical-review-desk.js?v=audit-66-local-ocr"></script>
+  <script type="module" src="./src/modules/audit66-batch-ocr-review.js?v=audit-66-local-ocr"></script>
+</body>
+</html>

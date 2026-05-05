@@ -1,0 +1,1142 @@
+cpp_pro — CONVERSOR PROFISSIONAL DE PARTITURAS PEDAGÓGICAS
+ESTRUTURA CONSOLIDADA ATUALIZADA
+VERSÃO: PROFISSIONAL OMR + MUSICXML + OCR + VALIDAÇÃO
+STATUS: DOCUMENTO-MESTRE DO PROJETO
+
+============================================================
+0. DIRETRIZ OPERACIONAL PERMANENTE DO PROJETO
+============================================================
+
+A partir desta versão, todo trabalho no cpp_pro deve seguir padrão profissional.
+
+Regras permanentes:
+
+- tratar o projeto como produto profissional, não como experimento casual;
+- priorizar arquitetura limpa, rastreabilidade, testes e manutenção;
+- não criar placeholders inúteis;
+- não criar módulos de fachada;
+- não dizer que uma etapa está pronta antes de estar conectada ao fluxo real;
+- não voltar a usar heurísticas visuais como motor principal;
+- não transformar revisão humana em reconstrução manual da partitura;
+- sugerir sempre soluções de alto desempenho, alto controle e alta confiabilidade;
+- ao final de cada commit/deploy relevante, atualizar este arquivo com o que foi feito desde a última seção.
+
+Critério de entrada de qualquer novo módulo:
+
+1. função real;
+2. conexão clara com o fluxo profissional;
+3. entrada e saída definidas;
+4. erro controlado;
+5. compatibilidade com o cpp_protocol.json;
+6. documentação mínima no README ou neste documento;
+7. sem dependência oculta.
+
+============================================================
+1. DECISÃO ARQUITETURAL OFICIAL
+============================================================
+
+A estrutura semiautomática por sistema foi substituída.
+
+A arquitetura anterior era baseada em:
+
+- seleção manual de sistema;
+- geração de compassos por análise visual local;
+- detecção de barras por pixel/canvas;
+- análise automática/heurística por sistema;
+- detecção de acordes/letras por região visual simples;
+- alinhamento por distância horizontal;
+- revisão manual como complemento de um motor visual local.
+
+Essa abordagem não é mais o fluxo principal.
+
+A arquitetura oficial atual é:
+
+PDF / imagem
+↓
+OMR profissional
+↓
+MusicXML
+↓
+OCR profissional de texto/layout
+↓
+Motor de fusão estrutural
+↓
+cpp_protocol.json
+↓
+IA validadora
+↓
+Revisão humana orientada por pendências
+↓
+Exportação
+
+Regra central:
+
+O cpp_pro profissional não adivinha a música pela imagem.
+Ele processa por motores especializados, registra evidências, valida inconsistências e guia a revisão humana.
+
+============================================================
+2. OBJETIVO DO cpp_pro PROFISSIONAL
+============================================================
+
+Transformar partituras em PDF/imagem em cifra técnica e cifra tocável fiel, preservando:
+
+- estrutura musical;
+- compassos;
+- notas;
+- pausas;
+- durações;
+- fórmulas de compasso;
+- armadura;
+- navegação musical;
+- letras cantadas;
+- cifras/acordes escritos;
+- pontos incertos;
+- histórico de revisão;
+- relatório de detecção;
+- relatório de inconsistências.
+
+O cpp_pro não deve:
+
+- adivinhar harmonia;
+- rearmonizar;
+- simplificar acordes;
+- trocar acordes escritos por sugestões;
+- inventar cifra a partir de aparência visual;
+- tratar heurística local como fonte primária.
+
+O cpp_pro deve:
+
+- extrair estrutura musical por OMR/MusicXML;
+- extrair texto/layout por OCR profissional;
+- fundir as fontes em JSON estruturado;
+- validar inconsistências;
+- pedir revisão humana somente onde houver pendência;
+- exportar cifra técnica e cifra tocável.
+
+============================================================
+3. FONTES OFICIAIS DE EVIDÊNCIA
+============================================================
+
+Fontes válidas:
+
+- musicxml: dados vindos do OMR/MusicXML;
+- ocr: dados vindos do OCR profissional;
+- fusion: dados gerados pela fusão MusicXML + OCR;
+- ai_validation: inconsistências apontadas pela IA validadora;
+- human_review: correções confirmadas pelo usuário.
+
+Fontes proibidas como motor principal:
+
+- heuristic;
+- pixel_detection;
+- canvas_guess;
+- visual_region_guess;
+- blob_detection;
+- horizontal_distance_guess.
+
+============================================================
+4. ARQUITETURA ATUAL DO REPOSITÓRIO
+============================================================
+
+cpp_pro/
+  README.md
+  index.html
+  manifest.json
+  service-worker.js
+  docker-compose.yml
+  .env.example
+  estrutura_cpp_profissional_atualizada.txt
+
+  backend/
+    main.py
+    musicxml_parser.py
+    requirements.txt
+    README.md
+    Dockerfile
+    test_backend.py
+
+  docs/
+    CPP_PROTOCOL_PROFISSIONAL.md
+
+  scripts/
+    start-backend.sh
+    start-frontend.sh
+
+  src/
+    app.js
+    styles.css
+
+    modules/
+      cpp-json.js
+      file-input.js
+      professional-omr-client.js
+      feedback-engine.js
+      measure-review.js
+      chord-sheet-technical.js
+      chord-sheet-playable.js
+      confidence-engine.js
+      navigation-engine.js
+      export-output.js
+
+============================================================
+5. PAPEL DE CADA CAMADA
+============================================================
+
+5.1 Frontend cpp_pro
+
+Função:
+
+- receber arquivo do usuário;
+- configurar URL do backend;
+- verificar backend;
+- enviar arquivo para OMR profissional;
+- receber cpp_protocol.json;
+- listar compassos importados;
+- permitir revisão simples;
+- gerar saídas;
+- exportar arquivos.
+
+O frontend não deve conter motor visual local de leitura musical.
+
+5.2 Backend profissional
+
+Função:
+
+- receber PDF/imagem/MusicXML;
+- executar Audiveris quando a entrada for PDF/imagem;
+- obter MusicXML/MXL;
+- converter MusicXML para cpp_protocol.json;
+- retornar protocolo profissional mesmo quando Audiveris não estiver disponível;
+- futuramente executar OCR profissional;
+- futuramente executar motor de fusão;
+- futuramente executar IA validadora.
+
+5.3 Audiveris / OMR
+
+Papel:
+
+- ler partitura impressa ou escaneada;
+- reconhecer estrutura musical;
+- exportar MusicXML/MXL.
+
+Audiveris entrega estrutura musical. Ele não gera cifra final.
+
+5.4 Parser MusicXML
+
+Função:
+
+- extrair partes, compassos, notas, pausas, durações, fórmula de compasso, armadura, letras quando existirem e navegação quando existir;
+- suportar MusicXML com namespace XML;
+- suportar MusicXML sem namespace XML;
+- suportar MXL compactado com container.xml;
+- ignorar nós XML não-elemento, como comentários;
+- não inventar dados ausentes;
+- retornar protocolo profissional completo;
+- registrar falhas como issues estruturadas.
+
+5.5 OCR profissional
+
+Fase pendente.
+
+Função futura:
+
+- ler acordes/cifras escritos;
+- ler letra cantada;
+- ler D.S., D.C., Coda, Fine, Al Coda;
+- ler andamento, título, textos editoriais e números de compasso úteis.
+
+Motores candidatos:
+
+- Google Document AI OCR;
+- Google Cloud Vision OCR.
+
+5.6 Motor de fusão estrutural
+
+Fase pendente.
+
+Função futura:
+
+- unir MusicXML + OCR;
+- relacionar compasso, tempo, nota/pausa, sílaba, acorde, navegação e incertezas;
+- marcar needs_review quando não houver evidência suficiente.
+
+5.7 IA validadora
+
+Fase pendente.
+
+Função futura:
+
+- auditar cpp_protocol.json;
+- apontar inconsistências;
+- devolver JSON estruturado;
+- nunca inventar acorde ou corrigir harmonia por gosto.
+
+5.8 Navigation Engine
+
+Função atual:
+
+- gerar ordem de execução a partir do protocolo quando a navegação já estiver resolvida;
+- usar ordem visual/importada apenas como fallback declarado;
+- marcar visual_only quando não houver resolução de D.S., D.C., Coda, Fine ou repetições.
+
+============================================================
+6. PROTOCOLO JSON PROFISSIONAL
+============================================================
+
+Estrutura base:
+
+{
+  "cpp_version": "professional-omr-1.0",
+  "source": {
+    "file_name": "",
+    "file_type": "pdf|image|musicxml|mxl",
+    "pages": 0,
+    "omr_status": "pending|success|failed|unavailable|musicxml_parsed",
+    "omr_engine": "Audiveris",
+    "ocr_status": "pending|success|failed|unavailable",
+    "ocr_engine": "",
+    "validation_status": "pending|passed|needs_review|failed",
+    "message": ""
+  },
+  "music": {
+    "title": "",
+    "key": "",
+    "meter_default": "",
+    "tempo": "",
+    "composer": "",
+    "arranger": ""
+  },
+  "pages": [],
+  "systems": [],
+  "measures": [],
+  "navigation": {
+    "visual_markers": [],
+    "execution_order": [],
+    "status": "visual_only|auto_resolved|manual_confirmed|needs_review"
+  },
+  "validation": {
+    "validation_status": "pending|passed|needs_review|failed",
+    "overall_confidence": 0,
+    "issues": []
+  },
+  "review": [],
+  "outputs": {
+    "technical_chord_sheet": "",
+    "playable_chord_sheet": "",
+    "uncertainty_report": "",
+    "detection_report": ""
+  }
+}
+
+============================================================
+7. ESTADO DAS SAÍDAS
+============================================================
+
+7.1 Cifra técnica
+
+A cifra técnica nasce do cpp_protocol.json e serve como relatório de conferência.
+
+7.2 Cifra tocável
+
+Estado atual: provisória.
+
+A cifra tocável atual:
+
+- usa apenas relações já registradas no protocolo;
+- não posiciona acordes por coordenada visual;
+- declara que o alinhamento definitivo depende do motor de fusão MusicXML + OCR.
+
+A cifra tocável final só deve ser considerada profissional após existir fusion engine validado.
+
+============================================================
+8. AUDITORIAS REALIZADAS
+============================================================
+
+Auditoria 1 — estrutura e inconsistências iniciais
+
+Resultado: correções aplicadas.
+
+Foi corrigido:
+
+- cpp-json.js passou para STORAGE_KEY profissional;
+- cpp_version passou para professional-omr-1.0;
+- ui_state/undo_stack saíram do protocolo base;
+- service-worker incluiu navigation-engine.js;
+- feedback-engine passou a usar linguagem de evidências profissionais;
+- chord-sheet-playable foi travado como saída provisória;
+- backend/main.py passou a normalizar protocolo profissional também quando Audiveris não está disponível;
+- estrutura_cpp_profissional_atualizada.txt passou a registrar navigation-engine e status provisório da cifra tocável.
+
+Auditoria 2 — backend coerente sem Audiveris instalado
+
+Resultado: correções aplicadas.
+
+Foi corrigido:
+
+- musicxml_parser.py passou a retornar protocolo profissional completo;
+- parser removeu system_analysis legado;
+- parser passou a incluir ocr_status, ocr_engine, validation_status e validation;
+- parser passou a registrar falhas de parsing como issue estruturada;
+- test_backend.py passou a testar PDF sem Audiveris;
+- teste valida omr_status unavailable, ocr_status pending, validation_status pending, outputs e navigation.status needs_review.
+
+Auditoria 3 — frontend chama apenas o fluxo profissional
+
+Resultado: aprovado em auditoria estática.
+
+Constatado:
+
+- app.js importa apenas módulos compatíveis com o fluxo profissional;
+- app.js chama analyzeWithProfessionalOmr e checkProfessionalOmrBackend;
+- não há importação dos módulos antigos measure-generator, system-analyzer, pdf-renderer, page-viewer, system-marker ou preprocessing;
+- buscas por termos antigos/heurísticos não retornaram ocorrências relevantes no repositório atual;
+- a saída tocável permanece provisória e explicitamente marcada como tal.
+
+Auditoria 4 — testes reais do backend
+
+Resultado: aprovado em terminal/CMD.
+
+Validação executada:
+
+- ambiente Python virtual criado localmente;
+- dependências instaladas via requirements.txt;
+- pytest executado no backend;
+- resultado informado: 2 passed.
+
+Conclusão:
+
+- teste do endpoint /health aprovado;
+- teste de PDF sem Audiveris aprovado;
+- backend retorna protocolo profissional controlado mesmo quando Audiveris não está disponível.
+
+Auditoria 5 — backend sobe sem quebrar
+
+Resultado: aprovado em execução real.
+
+Validação executada:
+
+- backend iniciado com uvicorn em localhost:8787;
+- endpoint http://localhost:8787/health aberto no navegador;
+- resposta recebida:
+
+{"ok":true,"app":"CPP Professional OMR Backend","audiveris_cmd":"audiveris","audiveris_available":false}
+
+Conclusão:
+
+- backend está vivo;
+- FastAPI respondeu corretamente;
+- configuração AUDIVERIS_CMD está legível;
+- Audiveris ainda não está configurado no ambiente local, o que é esperado nesta fase.
+
+Auditoria 6 — frontend abre sem erro
+
+Resultado: aprovado em execução real.
+
+Validação executada:
+
+- frontend servido localmente em http://localhost:8080;
+- tela principal abriu no navegador;
+- cabeçalho exibiu cpp_pro;
+- campo Backend OMR carregou http://localhost:8787;
+- fluxo visual principal carregou sem quebra aparente.
+
+Conclusão:
+
+- frontend local está servindo;
+- index.html, CSS e app.js carregaram de forma funcional;
+- interface principal está acessível para teste manual.
+
+Auditoria 7 — botão Verificar backend funciona
+
+Resultado: aprovado em execução real.
+
+Validação executada:
+
+- botão Verificar backend acionado no frontend local;
+- frontend consultou o backend em http://localhost:8787;
+- resposta exibida na interface:
+
+{
+  "ok": true,
+  "app": "CPP Professional OMR Backend",
+  "audiveris_cmd": "audiveris",
+  "audiveris_available": false
+}
+
+Conclusão:
+
+- frontend está comunicando com backend;
+- fluxo básico navegador → FastAPI está funcional;
+- ausência do Audiveris está corretamente sinalizada e não quebra o sistema.
+
+Auditoria 8 — upload MusicXML/MXL direto
+
+Resultado: aprovado para entrada estrutural nativa.
+
+Validação inicial:
+
+- arquivo BeetAnGeSample.musicxml foi enviado pelo frontend;
+- backend aceitou o arquivo;
+- processamento retornou Motor: Audiveris/MusicXML;
+- status retornou musicxml_parsed;
+- primeira execução retornou Compassos importados: 0.
+
+Diagnóstico da falha inicial:
+
+- o arquivo MusicXML enviado estava em formato sem namespace XML;
+- o parser anterior buscava elementos usando namespace MusicXML fixo;
+- por isso o arquivo era lido, mas <part> e <measure> não eram encontrados.
+
+Correções aplicadas:
+
+- musicxml_parser.py foi reescrito para buscar elementos por local-name, funcionando com MusicXML com namespace e sem namespace;
+- suporte real a .mxl compactado foi adicionado com leitura de META-INF/container.xml;
+- parser passou a ignorar nós XML não-elemento, como comentários;
+- main.py passou a preservar file_type correto para musicxml e mxl;
+- test_backend.py recebeu testes de regressão para MusicXML sem namespace, MXL compactado e comentários XML.
+
+Validação após correções:
+
+- BeetAnGeSample.musicxml importou 15 compassos;
+- BeetAnGeSample.mxl apresentou o mesmo resultado;
+- compasso 1 exibiu 3/4, texto/letra registrado, notas importadas e pausas importadas;
+- frontend listou compassos importados para revisão.
+
+Conclusão:
+
+- entrada .musicxml está funcional;
+- entrada .mxl está funcional;
+- parser estrutural nativo está apto para próximos testes com amostras reais adicionais.
+
+============================================================
+9. ATUALIZAÇÃO DE IDENTIDADE DO PROJETO
+============================================================
+
+Repositório renomeado manualmente para:
+
+cpp_pro
+
+Atualizações realizadas após renomeação:
+
+- manifest.json passou a usar nome e short_name cpp_pro;
+- index.html passou a exibir cpp_pro no title e no cabeçalho;
+- README.md passou a usar cpp_pro como nome oficial;
+- docker-compose.yml passou a usar serviço/container cpp-pro-backend;
+- este documento-mestre passou a registrar cpp_pro como identidade oficial do projeto.
+
+============================================================
+10. ESTADO ATUAL DO PROJETO
+============================================================
+
+Concluído:
+
+- virada arquitetural para fluxo profissional;
+- remoção do fluxo principal baseado em heurísticas;
+- protocolo profissional oficial criado;
+- README profissional criado;
+- backend FastAPI iniciado;
+- parser MusicXML conservador iniciado;
+- cliente frontend para OMR profissional criado;
+- frontend reorganizado para fluxo profissional;
+- Dockerfile do backend criado;
+- docker-compose criado;
+- .env.example criado;
+- scripts de start criados;
+- teste básico do backend criado;
+- teste de backend sem Audiveris criado;
+- service worker atualizado;
+- documentação estrutural atualizada;
+- diretriz operacional permanente registrada neste documento;
+- identidade oficial atualizada para cpp_pro;
+- pasta local conectada e sincronizada ao GitHub;
+- pytest do backend aprovado com 2 testes;
+- backend FastAPI validado via /health;
+- frontend local validado em localhost:8080;
+- comunicação frontend → backend validada;
+- parser MusicXML corrigido para namespace/no-namespace;
+- parser MXL compactado implementado;
+- parser passou a tolerar comentários XML e nós não-elemento;
+- testes de regressão adicionados para MusicXML e MXL;
+- upload .musicxml validado com 15 compassos importados;
+- upload .mxl validado com 15 compassos importados;
+- Java 17 instalado e validado localmente;
+- Audiveris instalado localmente em C:\Program Files\Audiveris\Audiveris.exe;
+- backend atualizado para carregar AUDIVERIS_CMD via .env.
+
+Pendente imediato:
+
+- confirmar .env local apontando para C:\Program Files\Audiveris\Audiveris.exe;
+- reiniciar backend;
+- confirmar /health com audiveris_available: true;
+- testar PDF → Audiveris → MusicXML.
+
+Pendente posterior:
+
+- evoluir parser MusicXML com casos reais;
+- integrar OCR profissional;
+- criar fusion engine;
+- criar IA validadora estruturada;
+- transformar cifra tocável provisória em cifra tocável final.
+
+============================================================
+11. PRÓXIMO BLOCO DE TRABALHO
+============================================================
+
+Próximos comandos locais:
+
+git pull origin main
+cd backend
+pip install -r requirements.txt
+pytest
+
+Configurar .env na raiz:
+
+AUDIVERIS_CMD=C:\Program Files\Audiveris\Audiveris.exe
+
+Depois reiniciar backend:
+
+uvicorn main:app --reload --host 0.0.0.0 --port 8787
+
+Conferir:
+
+http://localhost:8787/health
+
+Objetivo:
+
+"audiveris_available": true
+
+Depois testar no frontend:
+
+1. selecionar BeetAnGeSample.pdf;
+2. clicar em Processar com OMR Profissional;
+3. verificar se Audiveris gera MusicXML;
+4. verificar se o parser importa compassos do resultado.
+
+============================================================
+12. REGRA DE OURO ATUAL
+============================================================
+
+MusicXML estrutura.
+OCR lê texto.
+Fusão relaciona.
+IA valida.
+Humano aprova.
+cpp_pro exporta.
+
+Sucesso não significa 100% automático.
+
+Sucesso significa:
+
+partitura processada
++ estrutura musical extraída
++ texto/cifra capturados
++ pendências apontadas
++ revisão humana reduzida
++ cifra final exportável.
+
+============================================================
+13. AUDITORIAS 9, 10 E 11 — PROCESSAMENTO CONTROLADO E REVISÃO
+============================================================
+
+Auditoria 9 — PDF → Audiveris → MusicXML com arquivo controlado
+
+Resultado: aprovada para PDF controlado.
+
+Validação executada:
+
+- Java 17 instalado e validado localmente;
+- Audiveris instalado em C:\Program Files\Audiveris\Audiveris.exe;
+- .env configurado com AUDIVERIS_CMD=C:\Program Files\Audiveris\Audiveris.exe;
+- backend /health retornou audiveris_available: true;
+- BeetAnGeSample.pdf foi processado pelo fluxo PDF → Audiveris → MusicXML;
+- frontend retornou Motor: Audiveris/MusicXML;
+- status retornou success;
+- Compassos importados: 15.
+
+Conclusão:
+
+- pipeline PDF → Audiveris real → MusicXML → parser CPP está funcional para amostra controlada;
+- o caso externo de PDF com contagem manual divergente fica fora desta sequência por enquanto.
+
+Auditoria 10 — inspeção do conteúdo importado
+
+Resultado: aprovada para estrutura MusicXML básica.
+
+Validação observada:
+
+- frontend exibiu compasso atual com origem musicxml;
+- fórmula de compasso 3/4 exibida;
+- tom/armadura Eb exibido na cifra técnica;
+- notas importadas por compasso exibidas;
+- pausas importadas por compasso exibidas;
+- relatório de detecção gerado;
+- relatório de incertezas gerado;
+- cifra técnica gerada;
+- cifra tocável provisória gerada com aviso correto.
+
+Limite registrado:
+
+- OCR ainda não configurado;
+- motor de fusão MusicXML + OCR ainda não executado;
+- cifras reais, sílabas complementares e alinhamento definitivo ainda dependem da fase OCR/fusão.
+
+Auditoria 11 — ação Aceitar leitura e relatório de incertezas
+
+Resultado: correção aplicada.
+
+Validação inicial:
+
+- ao clicar em Aceitar leitura no Compasso 1, review_status mudou de pending para approved;
+- measure-review.js já definia review_status = approved e review_required = false;
+- porém o relatório de incertezas continuava exibindo o compasso aprovado com a instrução 'Revisar leitura importada do MusicXML'.
+
+Diagnóstico:
+
+- confidence-engine.js listava compassos com confiança 'provável' no relatório mesmo quando review_status era approved e review_required era false;
+- a mensagem genérica de revisão era aplicada sem respeitar o estado aprovado pelo usuário.
+
+Correção aplicada:
+
+- globalUncertaintyReport passou a ignorar compassos approved quando review_required não é true;
+- foi criada regra explícita para status approved, pending e needs_fix;
+- compasso approved deixa de aparecer como pendência de incerteza;
+- caso um compasso approved seja forçado por alguma inconsistência futura com review_required true, a mensagem passa a ser 'Leitura aprovada pelo usuário', não 'Revisar leitura importada do MusicXML'.
+
+Critério de revalidação local:
+
+1. executar git pull origin main;
+2. recarregar o frontend sem cache;
+3. processar BeetAnGeSample.musicxml ou PDF controlado;
+4. aprovar o Compasso 1;
+5. gerar Relatório de incertezas;
+6. verificar que o Compasso 1 não aparece mais como pendência quando review_required=false.
+
+============================================================
+14. PRÓXIMO BLOCO DE TRABALHO
+============================================================
+
+Próxima auditoria recomendada:
+
+Auditoria 12 — Marcar incerto.
+
+Critério:
+
+- selecionar um compasso;
+- clicar em Marcar incerto;
+- confirmar review_status needs_fix;
+- confirmar confidence incerto;
+- confirmar review_required true;
+- gerar relatório de incertezas;
+- confirmar mensagem obrigatória de revisão;
+- exportar JSON e validar persistência do estado.
+
+============================================================
+15. AUDITORIA 13 — PERSISTÊNCIA E EXPORTAÇÃO JSON DA REVISÃO
+============================================================
+
+Auditoria 13 — Persistência e exportação JSON da revisão
+
+Resultado: correções aplicadas; aguardando revalidação local final.
+
+Achado inicial:
+
+- o JSON exportado preservava corretamente o estado atual em measures;
+- Compasso 1 era exportado com review_status approved e review_required false;
+- Compasso 2 era exportado com review_status needs_fix, review_required true e confidence incerto;
+- porém outputs.uncertainty_report e outputs.detection_report podiam permanecer desatualizados;
+- o relatório de detecção ainda listava compassos aprovados como pendências.
+
+Correções aplicadas:
+
+- feedback-engine.js passou a classificar pendências por regra explícita;
+- approved + review_required=false deixa de aparecer em Pendências;
+- needs_fix entra como revisão obrigatória;
+- pending entra como revisão pendente;
+- incerto/ilegível entra por baixa confiança;
+- app.js passou a regenerar outputs antes de Exportar JSON;
+- app.js passou a regenerar outputs após Aceitar leitura;
+- app.js passou a regenerar outputs após Marcar incerto.
+
+Critério de revalidação:
+
+1. processar BeetAnGeSample.musicxml;
+2. aprovar Compasso 1;
+3. marcar Compasso 2 como incerto;
+4. exportar JSON;
+5. confirmar que measures preserva os estados atuais;
+6. confirmar que outputs.uncertainty_report não lista Compasso 1;
+7. confirmar que outputs.uncertainty_report lista Compasso 2 como needs_fix/incerto;
+8. confirmar que outputs.detection_report não lista Compasso 1 em Pendências;
+9. confirmar que outputs.detection_report lista Compasso 2 como revisão obrigatória.
+
+Próximo passo:
+
+- revalidar localmente a Auditoria 13;
+- se aprovada, avançar para Auditoria 14.
+
+============================================================
+18. AUDITORIA 18 — RESET E SINCRONIZAÇÃO DE METADADOS
+============================================================
+
+Auditoria 18 — Reset/sincronização de metadados ao processar novo arquivo
+
+Resultado: aprovada.
+
+Achado:
+
+Após processar arquivos diferentes em sequência, o CPP não herdava compassos, revisões ou relatórios críticos do arquivo anterior, mas alguns metadados globais permaneciam contaminados pelos campos manuais da tela.
+
+Casos observados:
+
+1. MozaChloSample.musicxml
+- fórmula detectada correta: 2/2;
+- tom detectado correto: Eb;
+- compassos importados: 18;
+- porém music.meter_default ainda podia permanecer como 3/4 antes da correção.
+
+2. MozaVeilSample.musicxml
+- arquivo importado corretamente: MozaVeilSample.musicxml;
+- fórmula detectada correta: 2/4;
+- tom detectado correto: G;
+- compassos importados: 23;
+- porém title e outputs ainda podiam carregar MozaChloSample antes da correção.
+
+Correção aplicada:
+
+Commit funcional:
+167391c Reset imported metadata for new files
+
+Alterações realizadas em src/app.js:
+
+- ao selecionar novo arquivo, o título da tela passa a ser o nome do novo arquivo;
+- tom, compasso padrão e andamento são limpos;
+- ao processar OMR, os metadados são sincronizados a partir do MusicXML/importação;
+- music.title passa a vir do protocolo importado ou do nome do arquivo;
+- music.key passa a vir de detected_summary.key_signature;
+- music.meter_default passa a vir de detected_summary.meter ou do primeiro compasso;
+- music.tempo passa a vir de detected_summary.tempo quando existir;
+- outputs passam a ser regenerados com os metadados corretos do novo arquivo.
+
+Revalidação:
+
+MozaVeilSample.musicxml:
+- music.title: Das Veilchen (Page 1);
+- music.key: G;
+- music.meter_default: 2/4;
+- detected_summary.meter: 2/4;
+- measure_count: 23;
+- cifra técnica: Das Veilchen (Page 1), Tom G, Compasso padrão 2/4.
+
+MozaChloSample.musicxml:
+- music.title: An Chloe (Page 1);
+- music.key: Eb;
+- music.meter_default: 2/2;
+- detected_summary.meter: 2/2;
+- measure_count: 18;
+- cifra técnica: An Chloe (Page 1), Tom Eb, Compasso padrão 2/2.
+
+Critério aprovado:
+
+- novo arquivo não herda metadados antigos;
+- novo arquivo não herda compassos antigos;
+- novo arquivo não herda revisão antiga;
+- outputs usam título, tom e compasso do arquivo atual;
+- relatórios permanecem limpos quando todos os compassos estão aprovados.
+
+Estado:
+
+Auditoria 17 — Reset / novo arquivo: aprovada.
+Auditoria 18 — Reset/sincronização de metadados: aprovada.
+
+Próximo passo:
+
+Auditoria 19 — validar PDF controlado com Audiveris, usando um caso conhecido e comparável com MusicXML/MXL.
+
+============================================================
+19. AUDITORIA 19 — PDF CONTROLADO COM AUDIVERIS
+============================================================
+
+Auditoria 19 — PDF controlado com Audiveris
+
+Resultado: aprovada.
+
+Objetivo:
+
+Validar o fluxo completo:
+
+PDF → Audiveris → MusicXML → CPP → JSON / relatórios / cifras
+
+Arquivo testado:
+
+BeetAnGeSample.pdf
+
+Resultado observado:
+
+- Motor OMR: Audiveris/MusicXML;
+- Status OMR: success;
+- Arquivo: BeetAnGeSample.pdf;
+- Tipo de arquivo: pdf;
+- Tom detectado: Eb;
+- Fórmula de compasso detectada: 3/4;
+- Compassos importados: 15;
+- Relatório de incertezas: nenhuma incerteza registrada;
+- Relatório de detecção: nenhuma pendência crítica registrada.
+
+Comparação com arquivos já validados:
+
+- BeetAnGeSample.musicxml → 15 compassos;
+- BeetAnGeSample.mxl → 15 compassos;
+- BeetAnGeSample.pdf → 15 compassos.
+
+Conclusão:
+
+O fluxo PDF → Audiveris → MusicXML → CPP funcionou corretamente para o caso controlado BeetAnGeSample.pdf.
+
+A saída estrutural preservou:
+- quantidade de compassos;
+- tom;
+- fórmula de compasso;
+- status de importação;
+- ausência de pendências críticas.
+
+Observação importante:
+
+A cifra tocável permaneceu corretamente marcada como provisória, pois OCR/fusão ainda não foram implementados.
+
+O PDF via Audiveris, neste caso, não trouxe texto/letra/cifra complementar suficiente para alinhamento final. O app manteve o aviso profissional:
+
+"AVISO: cifra tocável provisória.
+Esta saída usa apenas relações já registradas no cpp_protocol.json.
+O alinhamento profissional definitivo depende do motor de fusão MusicXML + OCR.
+Ordem de execução não confirmada; usando ordem visual/importada."
+
+Critério aprovado:
+
+- backend utilizou Audiveris;
+- processamento retornou success;
+- CPP importou 15 compassos;
+- tom Eb foi preservado;
+- fórmula 3/4 foi preservada;
+- relatórios permaneceram limpos;
+- app não fingiu alinhamento final sem OCR/fusão.
+
+Estado:
+
+Auditoria 19 — PDF controlado com Audiveris: aprovada.
+
+Próximo passo:
+
+Auditoria 20 — testar PDFs controlados adicionais ou iniciar o bloco OCR/fusão MusicXML + OCR.
+
+============================================================
+20. AUDITORIA 20 — PDFs CONTROLADOS ADICIONAIS
+============================================================
+
+Auditoria 20 — PDFs controlados adicionais com Audiveris
+
+Resultado: aprovada.
+
+Objetivo:
+
+Validar se o fluxo PDF → Audiveris → MusicXML → CPP permanece estável em mais de um arquivo controlado, além do BeetAnGeSample.pdf.
+
+Arquivos testados:
+
+1. MozaVeilSample.pdf
+2. MozaChloSample.pdf
+
+Resultado observado — MozaVeilSample.pdf:
+
+- Motor OMR: Audiveris/MusicXML;
+- Status OMR: success;
+- Arquivo: MozaVeilSample.pdf;
+- Tipo de arquivo: pdf;
+- Tom detectado: G;
+- Fórmula de compasso detectada: 2/4;
+- Compassos importados: 23;
+- Relatório de incertezas: nenhuma incerteza registrada;
+- Relatório de detecção: nenhuma pendência crítica registrada.
+
+Resultado observado — MozaChloSample.pdf:
+
+- Motor OMR: Audiveris/MusicXML;
+- Status OMR: success;
+- Arquivo: MozaChloSample.pdf;
+- Tipo de arquivo: pdf;
+- Tom detectado: Eb;
+- Fórmula de compasso detectada: 2/2;
+- Compassos importados: 18;
+- Relatório de incertezas: nenhuma incerteza registrada;
+- Relatório de detecção: nenhuma pendência crítica registrada.
+
+Comparação final do bloco PDF:
+
+- BeetAnGeSample.pdf → 15 compassos | Eb | 3/4;
+- MozaVeilSample.pdf → 23 compassos | G | 2/4;
+- MozaChloSample.pdf → 18 compassos | Eb | 2/2.
+
+Conclusão:
+
+O fluxo PDF → Audiveris → MusicXML → CPP permaneceu estável em três PDFs controlados.
+
+O CPP preservou:
+- quantidade de compassos;
+- tom;
+- fórmula de compasso;
+- status success;
+- relatórios sem pendência crítica;
+- relatórios de incerteza limpos.
+
+Observação importante:
+
+As cifras tocáveis permaneceram corretamente provisórias, porque OCR/fusão ainda não existem no pipeline.
+
+O app não fingiu alinhamento final sem OCR/fusão.
+
+Estado:
+
+Auditoria 19 — PDF Beet controlado: aprovada.
+Auditoria 20 — PDFs Moza controlados adicionais: aprovada.
+
+Próximo passo:
+
+Iniciar novo bloco técnico:
+Auditoria 21 — planejamento e implementação inicial do OCR/fusão MusicXML + OCR.
+
+============================================================
+21. AUDITORIA 21 — CONTRATO REAL DO OCR
+============================================================
+
+Auditoria 21 — contrato real do OCR
+
+Resultado: aprovada.
+
+Objetivo:
+
+Criar a primeira camada formal e auditável de OCR no cpp_pro, sem OCR fake, sem heurística como motor principal e sem fusão prematura com MusicXML.
+
+Commits funcionais aplicados:
+
+- 2116ff9 Add OCR contract engine for audit 21
+- 3b94185 Integrate OCR contract into backend protocol
+- 53368c8 Test OCR contract layer for audit 21
+- 1ab703d Read OCR engine command after environment load
+
+Arquivos alterados:
+
+- backend/ocr_engine.py
+- backend/main.py
+- backend/test_backend.py
+
+Implementação:
+
+Foi criado o módulo backend/ocr_engine.py com contrato explícito de OCR:
+
+{
+  "status": "pending | unavailable | success | failed | not_applicable",
+  "engine": "",
+  "text_blocks": [],
+  "possible_chords": [],
+  "possible_lyrics": [],
+  "warnings": []
+}
+
+Regras implementadas:
+
+- MusicXML/MXL não executa OCR;
+- MusicXML/MXL retorna ocr.status = not_applicable;
+- PDF/imagem sem OCR_ENGINE_CMD configurado retorna ocr.status = unavailable;
+- source.ocr_status espelha protocol["ocr"].status;
+- source.ocr_engine espelha protocol["ocr"].engine;
+- OCR não altera measures;
+- OCR não altera tom;
+- OCR não altera fórmula de compasso;
+- OCR não altera notas;
+- OCR não altera pausas;
+- OCR não altera revisão humana;
+- OCR não cria texto, cifra ou letra fictícia;
+- fusão MusicXML + OCR permanece pendente para auditoria futura.
+
+Testes executados:
+
+Localmente, em:
+
+C:\HomeCloud\shared\Projetos\cpp_pro\backend
+
+Comando:
+
+pytest
+
+Resultado:
+
+4 passed in 0.51s
+
+Validação funcional — MusicXML:
+
+Arquivo testado:
+
+MozaVeilSample.musicxml
+
+Resultado:
+
+- Status OMR: musicxml_parsed;
+- Motor OMR: Audiveris/MusicXML;
+- Status OCR: not_applicable;
+- Motor OCR: não configurado;
+- Tom: G;
+- Fórmula de compasso: 2/4;
+- Compassos importados: 23;
+- Relatório de incertezas: nenhuma incerteza registrada;
+- Relatório de detecção: nenhuma pendência crítica registrada.
+
+Critério aprovado para MusicXML:
+
+- OCR não tentou processar MusicXML/MXL;
+- OCR foi marcado como não aplicável;
+- estrutura musical permaneceu vinda do MusicXML;
+- texto/letra existente no MusicXML foi preservado como evidência estrutural;
+- sem fusão OCR.
+
+Validação funcional — PDF:
+
+Arquivo testado:
+
+MozaChloSample.pdf
+
+Resultado:
+
+- Status OMR: success;
+- Motor OMR: Audiveris/MusicXML;
+- Status OCR: unavailable;
+- Motor OCR: não configurado;
+- Tom: Eb;
+- Fórmula de compasso: 2/2;
+- Compassos importados: 18;
+- Relatório de incertezas: nenhuma incerteza registrada;
+- Relatório de detecção: nenhuma pendência crítica registrada.
+
+Critério aprovado para PDF:
+
+- Audiveris continuou executando o fluxo PDF → MusicXML;
+- OCR foi marcado como unavailable por ausência de OCR_ENGINE_CMD;
+- nenhum texto, cifra ou letra foi inventado;
+- measures permaneceram derivados do MusicXML gerado pelo Audiveris;
+- tom, fórmula de compasso, notas e pausas não foram alterados pelo OCR;
+- cifra tocável permaneceu corretamente provisória.
+
+Conclusão:
+
+A Auditoria 21 está aprovada.
+
+O cpp_pro agora possui uma camada formal de contrato OCR, conectada ao protocolo profissional, testada no backend e validada funcionalmente no app.
+
+Estado:
+
+Auditoria 21 — contrato real do OCR: aprovada.
+
+Próximo passo:
+
+Auditoria 22 — escolher e configurar motor OCR real, mantendo a regra:
+OCR lê texto/layout; MusicXML estrutura; fusão relaciona; humano aprova.
+
+
