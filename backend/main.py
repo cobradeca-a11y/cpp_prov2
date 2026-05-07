@@ -55,7 +55,7 @@ def health() -> dict[str, Any]:
     return {
         "ok": True,
         "app": APP_NAME,
-        "build": "audit-66-local-ocr",
+        "build": "audit-67-geometry-resolver",
         "audiveris_cmd": AUDIVERIS_CMD,
         "audiveris_available": audiveris_available(),
         "ocr_engine": ocr_engine,
@@ -123,12 +123,17 @@ async def analyze_omr(file: UploadFile = File(...)) -> JSONResponse:
             omr_status="success",
             ocr_contract=ocr_contract,
         )
-        # audit-67: resolver geometria de compassos via OpenCV
+        # audit-67: geometria via OpenCV — roda APÓS finalize_protocol
+        import traceback as _tb
         try:
             normalized = resolve_measure_geometry(source, normalized)
         except Exception as exc:
-            normalized.setdefault("geometry_resolver", {})["error"] = str(exc)
-            normalized.setdefault("geometry_resolver", {})["version"] = "audit-67"
+            normalized["geometry_resolver"] = {
+                "version": "audit-67",
+                "status": "error",
+                "error": str(exc),
+                "traceback": _tb.format_exc()[-2000:],
+            }
         return JSONResponse(normalized)
 
 

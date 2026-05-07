@@ -48,7 +48,11 @@ function blockKind(b) {
 }
 
 function isAssigned(b) {
-  return Boolean(b?.assignment?.measure_id && b?.assignment?.status === 'assigned_human_batch');
+  const status = b?.assignment?.status || '';
+  return Boolean(b?.assignment?.measure_id && (
+    status === 'assigned_human_batch' ||
+    status === 'assigned_geometry_auto'
+  ));
 }
 
 function sortBlocks(blocks) {

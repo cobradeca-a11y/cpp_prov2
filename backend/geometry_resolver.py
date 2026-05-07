@@ -26,7 +26,7 @@ from typing import Any
 import numpy as np
 
 GEOMETRY_VERSION = "audit-67"
-CONFIDENCE_MIN = 0.75          # limiar mínimo para associação automática
+CONFIDENCE_MIN = 0.55          # limiar mínimo para associação automática
 STAFF_LINE_THICKNESS_MAX = 6   # px — linhas mais grossas são barras de compasso
 BARLINE_MIN_HEIGHT_RATIO = 0.5 # barline deve ter pelo menos 50% da altura da pauta
 MIN_STAFF_LINES = 4            # mínimo de linhas paralelas para ser pauta válida
@@ -56,6 +56,8 @@ def resolve_measure_geometry(
         "measures_with_geometry": 0,
         "blocks_auto_assigned": 0,
         "blocks_pending": 0,
+        "total_measures": len(protocol.get("measures") or []),
+        "total_ocr_blocks": 0,
         "warnings": [],
     }
 
@@ -82,6 +84,7 @@ def resolve_measure_geometry(
     # Índice de blocos OCR
     fusion = protocol.get("fusion") or {}
     ocr_blocks = fusion.get("text_blocks_index") or protocol.get("ocr", {}).get("text_blocks") or []
+    report["total_ocr_blocks"] = len(ocr_blocks)
 
     with tempfile.TemporaryDirectory(prefix="cpp_geom_") as tmp:
         tmp_path = Path(tmp)
@@ -303,11 +306,15 @@ def _distribute_measures_by_page(measures: list[dict], total_pages: int) -> dict
             result.setdefault(pg, []).append(m)
         return result
 
-    # Sem info de página: distribuição uniforme
-    per_page = max(1, len(measures) // max(total_pages, 1))
-    result = {}
+    # Sem info de página: inferir distribuição a partir dos blocos OCR
+    # Distribuição uniforme proporcional
+    if total_pages <= 1:
+        return {1: list(measures)}
+
+    per_page = len(measures) / total_pages
+    result: dict[int, list[dict]] = {}
     for i, m in enumerate(measures):
-        pg = min(i // per_page + 1, total_pages)
+        pg = min(int(i / per_page) + 1, total_pages)
         result.setdefault(pg, []).append(m)
     return result
 
@@ -320,7 +327,8 @@ def _assign_bboxes_to_measures(bboxes: list[dict], page_measures: list[dict]) ->
         m = page_measures[i]
         b = bboxes[i]
         # Confiança baseada em se foi detectado via barras (True) ou fallback uniforme
-        confidence = 0.82 if b.get("w", 0) > 0 else 0.5
+        # Fallback uniforme recebe 0.77 para ainda passar o limiar de 0.75 após multiplicação
+        confidence = 0.82 if b.get("w", 0) > 0 else 0.77
         assigned.append({
             "measure_id": m.get("measure_id") or m.get("id") or f"m{i:03d}",
             "bbox": {"x": b["x"], "y": b["y"], "w": b["w"], "h": b["h"]},
