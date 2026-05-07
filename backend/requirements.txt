@@ -11,3 +11,6 @@ PyMuPDF==1.24.14
 # OCR local (sem credenciais externas) — audit-66-local-ocr
 pytesseract>=0.3.13
 Pillow>=10.0.0
+# Geometria e detecção de barras — audit-67-geometry-resolver
+opencv-python-headless>=4.8.0
+numpy>=1.24.0

@@ -16,6 +16,7 @@ from alignment_report_engine import sync_alignment_report
 from association_engine import sync_ocr_measure_associations, sync_ocr_system_associations, sync_page_system_measure_associations
 from fusion_engine import sync_initial_fusion
 from geometry_engine import sync_layout_geometry
+from geometry_resolver import resolve_measure_geometry
 from musicxml_parser import parse_musicxml_to_cpp
 from ocr_engine import build_ocr_contract, sync_ocr_contract
 
@@ -115,13 +116,20 @@ async def analyze_omr(file: UploadFile = File(...)) -> JSONResponse:
             ))
 
         protocol = parse_musicxml_to_cpp(musicxml, source_name=file.filename)
-        return JSONResponse(normalize_professional_protocol(
+        normalized = normalize_professional_protocol(
             protocol,
             file.filename,
             file_type=file_type,
             omr_status="success",
             ocr_contract=ocr_contract,
-        ))
+        )
+        # audit-67: resolver geometria de compassos via OpenCV
+        try:
+            normalized = resolve_measure_geometry(source, normalized)
+        except Exception as exc:
+            normalized.setdefault("geometry_resolver", {})["error"] = str(exc)
+            normalized.setdefault("geometry_resolver", {})["version"] = "audit-67"
+        return JSONResponse(normalized)
 
 
 def input_file_type(suffix: str) -> str:
