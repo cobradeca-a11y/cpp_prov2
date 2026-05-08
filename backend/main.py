@@ -17,6 +17,9 @@ from association_engine import sync_ocr_measure_associations, sync_ocr_system_as
 from fusion_engine import sync_initial_fusion
 from geometry_engine import sync_layout_geometry
 from geometry_resolver import resolve_measure_geometry
+from omr_layout_parser import parse_omr_layout, inject_omr_layout_into_protocol
+from lyric_merger import merge_musicxml_lyrics_with_ocr, generate_playable_chord_sheet
+from semantic_filter import apply_semantic_filter
 from musicxml_parser import parse_musicxml_to_cpp
 from ocr_engine import build_ocr_contract, sync_ocr_contract
 
@@ -55,7 +58,7 @@ def health() -> dict[str, Any]:
     return {
         "ok": True,
         "app": APP_NAME,
-        "build": "audit-67-geometry-resolver",
+        "build": "audit-68-layout",
         "audiveris_cmd": AUDIVERIS_CMD,
         "audiveris_available": audiveris_available(),
         "ocr_engine": ocr_engine,
@@ -123,17 +126,37 @@ async def analyze_omr(file: UploadFile = File(...)) -> JSONResponse:
             omr_status="success",
             ocr_contract=ocr_contract,
         )
-        # audit-67: geometria via OpenCV — roda APÓS finalize_protocol
+        # audit-67: geometria via OpenCV (fallback)
         import traceback as _tb
         try:
             normalized = resolve_measure_geometry(source, normalized)
         except Exception as exc:
-            normalized["geometry_resolver"] = {
-                "version": "audit-67",
-                "status": "error",
-                "error": str(exc),
-                "traceback": _tb.format_exc()[-2000:],
-            }
+            normalized["geometry_resolver"] = {"version": "audit-67", "error": str(exc)}
+
+        # audit-68a: layout real do Audiveris (.omr)
+        try:
+            omr_file = find_omr_file(tmpdir)
+            if omr_file:
+                omr_layout = parse_omr_layout(omr_file)
+                normalized = inject_omr_layout_into_protocol(normalized, omr_layout)
+        except Exception as exc:
+            normalized.setdefault("omr_layout", {})["error"] = str(exc)
+
+        # audit-68b: filtro semântico pós-associação
+        try:
+            normalized = apply_semantic_filter(normalized)
+        except Exception as exc:
+            normalized.setdefault("semantic_filter", {})["error"] = str(exc)
+
+        # audit-68c: fusão letra MusicXML + cifras OCR → cifra tocável
+        try:
+            normalized = merge_musicxml_lyrics_with_ocr(normalized)
+            chord_sheet = generate_playable_chord_sheet(normalized)
+            if chord_sheet.strip():
+                normalized.setdefault("outputs", {})["playable_chord_sheet"] = chord_sheet
+        except Exception as exc:
+            normalized.setdefault("lyric_merger", {})["error"] = str(exc)
+
         return JSONResponse(normalized)
 
 
@@ -164,6 +187,13 @@ def normalize_ocr_for_unavailable_omr(ocr_contract: dict[str, Any], file_type: s
             warnings.append("OCR PDF não executado nesta validação porque o OMR profissional está indisponível e o PDF de teste não representa entrada real para conversão página→imagem.")
             contract["warnings"] = warnings
     return contract
+
+
+def find_omr_file(root: Path) -> Path | None:
+    """Procura arquivo .omr gerado pelo Audiveris."""
+    for f in root.rglob("*.omr"):
+        return f
+    return None
 
 
 def run_audiveris(source: Path, workdir: Path) -> Path | None:
