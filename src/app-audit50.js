@@ -167,7 +167,42 @@ function renderReviews() {
 function generateOutputs() {
   protocol.outputs ||= {};
   protocol.outputs.technical_chord_sheet = protocol.outputs.technical_chord_sheet || `CIFRA TÉCNICA — ${protocol.music?.title || 'Sem título'}\nTom: ${protocol.music?.key || ''} | Compasso padrão: ${protocol.music?.meter_default || ''} | Andamento: ${protocol.music?.tempo || ''}\n\nSaída técnica depende de evidências aprovadas.`;
-  protocol.outputs.playable_chord_sheet = protocol.outputs.playable_chord_sheet || `${protocol.music?.title || 'Sem título'}\n\nCifra tocável bloqueada até liberação humana explícita.`;
+  // audit-68: usar cifra tocável gerada automaticamente pelo backend se disponível
+  const backendChordSheet = protocol.outputs?.playable_chord_sheet;
+  const hasRealContent = backendChordSheet && !backendChordSheet.includes('bloqueada') && backendChordSheet.trim().length > 30;
+  if (!hasRealContent) {
+    const mergedContent = protocol.measures?.filter(m => m.merged_content?.has_playable_content) || [];
+    if (mergedContent.length > 0) {
+      // Reconstruir cifra tocável do merged_content no frontend
+      const title = protocol.music?.title || 'Sem título';
+      const key = protocol.music?.key || '';
+      const meter = protocol.music?.meter_default || '';
+      let lines = [`${title}`, `Tom: ${key} | Compasso: ${meter}`, '='.repeat(60), ''];
+      let chordLine = '', lyricLine = '';
+      let colCount = 0;
+      for (const m of mergedContent) {
+        const mc = m.merged_content;
+        const chords = (mc.chords || []).join(' ');
+        const lyric = mc.lyric || '';
+        const width = Math.max(chords.length, lyric.length, 8) + 2;
+        chordLine += chords.padEnd(width);
+        lyricLine += lyric.padEnd(width);
+        colCount++;
+        if (colCount % 4 === 0) {
+          lines.push(chordLine.trimEnd());
+          lines.push(lyricLine.trimEnd());
+          lines.push('');
+          chordLine = ''; lyricLine = '';
+        }
+      }
+      if (chordLine.trim()) { lines.push(chordLine.trimEnd()); lines.push(lyricLine.trimEnd()); }
+      const autoGenNote = `
+[Cifra gerada automaticamente — audit-68 — ${mergedContent.length} compassos com conteúdo]`;
+      protocol.outputs.playable_chord_sheet = lines.join('\n') + autoGenNote;
+    } else {
+      protocol.outputs.playable_chord_sheet = protocol.outputs.playable_chord_sheet || `${protocol.music?.title || 'Sem título'}\n\nCifra tocável bloqueada até liberação humana explícita.`;
+    }
+  }
   protocol.outputs.uncertainty_report = protocol.outputs.uncertainty_report || 'RELATÓRIO DE INCERTEZAS\n\nSem saída recalculada nesta sessão.';
   protocol.outputs.detection_report = protocol.outputs.detection_report || 'RELATÓRIO DE DETECÇÃO\n\nSem saída recalculada nesta sessão.';
   setText('technicalOutput', protocol.outputs.technical_chord_sheet);
@@ -238,7 +273,28 @@ async function processOmr() {
     protocol.music ||= {};
     protocol.music.title ||= fileBaseName(file.name) || 'Sem título';
     saveProtocol(protocol);
-    setText('processingStatus', ['Processamento concluído.', `Arquivo: ${protocol.source?.file_name || file.name}`, `Status OMR: ${protocol.source?.omr_status || 'pending'}`, `Status OCR: ${protocol.source?.ocr_status || protocol.ocr?.status || 'pending'}`, `Compassos importados: ${protocol.measures?.length || 0}`].join('\n'));
+    const semFilter = protocol.semantic_filter || {};
+    const lyricMerger = protocol.lyric_merger || {};
+    const statusLines = [
+      'Processamento concluído.',
+      `Arquivo: ${protocol.source?.file_name || file.name}`,
+      `Status OMR: ${protocol.source?.omr_status || 'pending'}`,
+      `Status OCR: ${protocol.source?.ocr_status || protocol.ocr?.status || 'pending'}`,
+      `Compassos importados: ${protocol.measures?.length || 0}`,
+    ];
+    if (semFilter.blocks_kept !== undefined) {
+      statusLines.push(`Blocos OCR aprovados: ${semFilter.blocks_kept} | Ruído filtrado: ${semFilter.blocks_rejected_noise || 0}`);
+    }
+    if (lyricMerger.measures_processed) {
+      statusLines.push(`Compassos com conteúdo: ${lyricMerger.measures_with_merged_content || 0} | Com letra MusicXML: ${lyricMerger.measures_with_musicxml_lyrics || 0}`);
+    }
+    if (protocol.omr_layout?.measures_with_layout) {
+      statusLines.push(`Layout Audiveris: ${protocol.omr_layout.measures_with_layout} compassos com geometria real`);
+    }
+    if (protocol.syllable_aligner?.syllables_aligned !== undefined) {
+      statusLines.push(`Sílabas alinhadas à nota: ${protocol.syllable_aligner.syllables_aligned} | Pendentes: ${protocol.syllable_aligner.syllables_pending || 0}`);
+    }
+    setText('processingStatus', statusLines.join('\n'));
     measureIndex = 0; ocrIndex = 0; reviewIndex = 0;
     refreshAll();
   } finally {

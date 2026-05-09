@@ -12,14 +12,13 @@ from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-from alignment_report_engine import sync_alignment_report
-from association_engine import sync_ocr_measure_associations, sync_ocr_system_associations, sync_page_system_measure_associations
 from fusion_engine import sync_initial_fusion
-from geometry_engine import sync_layout_geometry
 from geometry_resolver import resolve_measure_geometry
 from omr_layout_parser import parse_omr_layout, inject_omr_layout_into_protocol
 from lyric_merger import merge_musicxml_lyrics_with_ocr, generate_playable_chord_sheet
 from semantic_filter import apply_semantic_filter
+from chord_ocr_gpt import run_gpt4o_chord_ocr_for_protocol
+from syllable_aligner import align_syllables_to_notes, generate_scorecloud_style_sheet
 from musicxml_parser import parse_musicxml_to_cpp
 from ocr_engine import build_ocr_contract, sync_ocr_contract
 
@@ -58,7 +57,7 @@ def health() -> dict[str, Any]:
     return {
         "ok": True,
         "app": APP_NAME,
-        "build": "audit-68-layout",
+        "build": "audit-70-syllable-align",
         "audiveris_cmd": AUDIVERIS_CMD,
         "audiveris_available": audiveris_available(),
         "ocr_engine": ocr_engine,
@@ -148,14 +147,38 @@ async def analyze_omr(file: UploadFile = File(...)) -> JSONResponse:
         except Exception as exc:
             normalized.setdefault("semantic_filter", {})["error"] = str(exc)
 
+        # audit-69: OCR especializado em cifras via GPT-4o (quando CHORD_OCR_ENGINE=gpt4o)
+        try:
+            normalized = run_gpt4o_chord_ocr_for_protocol(source, normalized)
+        except Exception as exc:
+            normalized.setdefault("chord_ocr_gpt", {})["error"] = str(exc)
+
         # audit-68c: fusão letra MusicXML + cifras OCR → cifra tocável
         try:
             normalized = merge_musicxml_lyrics_with_ocr(normalized)
-            chord_sheet = generate_playable_chord_sheet(normalized)
-            if chord_sheet.strip():
-                normalized.setdefault("outputs", {})["playable_chord_sheet"] = chord_sheet
         except Exception as exc:
             normalized.setdefault("lyric_merger", {})["error"] = str(exc)
+
+        # audit-70: alinhamento sílaba→nota (estilo ScoreCloud)
+        try:
+            normalized = align_syllables_to_notes(normalized)
+            scorecloud_sheet = generate_scorecloud_style_sheet(normalized)
+            if scorecloud_sheet.strip():
+                normalized.setdefault("outputs", {})["playable_chord_sheet"] = scorecloud_sheet
+            else:
+                from lyric_merger import generate_playable_chord_sheet
+                chord_sheet = generate_playable_chord_sheet(normalized)
+                if chord_sheet.strip():
+                    normalized.setdefault("outputs", {})["playable_chord_sheet"] = chord_sheet
+        except Exception as exc:
+            normalized.setdefault("syllable_aligner", {})["error"] = str(exc)
+            try:
+                from lyric_merger import generate_playable_chord_sheet
+                chord_sheet = generate_playable_chord_sheet(normalized)
+                if chord_sheet.strip():
+                    normalized.setdefault("outputs", {})["playable_chord_sheet"] = chord_sheet
+            except Exception:
+                pass
 
         return JSONResponse(normalized)
 
@@ -237,12 +260,8 @@ def sanitize_filename(name: str) -> str:
 
 
 def finalize_protocol(protocol: dict[str, Any]) -> dict[str, Any]:
-    protocol = sync_layout_geometry(protocol)
-    protocol = sync_initial_fusion(protocol)
-    protocol = sync_ocr_system_associations(protocol)
-    protocol = sync_ocr_measure_associations(protocol)
-    protocol = sync_page_system_measure_associations(protocol)
-    return sync_alignment_report(protocol)
+    # audit-70: apenas fusão inicial — geometria e associações feitas por módulos audit-67/68/70
+    return sync_initial_fusion(protocol)
 
 
 def make_base_protocol(

@@ -14,3 +14,4 @@ Pillow>=10.0.0
 # Geometria e detecção de barras — audit-67-geometry-resolver
 opencv-python-headless>=4.8.0
 numpy>=1.24.0
+# GPT-4o chord OCR — audit-69 (httpx já incluso via fastapi)
